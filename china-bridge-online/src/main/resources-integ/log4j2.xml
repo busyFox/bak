@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!--LOG SERVER-->
+        <RollingFile name="file" fileName="${env:SERVER_LOG}/logs/china-bridge-online/server.log" append="true" filePattern="${env:SERVER_LOG}/china-bridge-online/server-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- set level for logger to debug else error is the default level ! -->
+        <Logger name="com.funbridge" level="debug" additivity="false">
+            <AppenderRef ref="file" level="debug"/>
+        </Logger>
+        <Logger name="com.funbridge.server.store" level="info" additivity="false">
+            <AppenderRef ref="file"/>
+        </Logger>
+        <!--</Logger>-->
+        <Root level="error">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+        </Root>
+    </Loggers>
+</Configuration>

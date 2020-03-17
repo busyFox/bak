@@ -1,0 +1,109 @@
+[LIST]
+1=1_random
+
+[1_random]
+1=dujeuenSud
+2=indifferent1
+3=indifferent1
+4=indifferent1
+5=indifferent1
+6=indifferent1
+7=indifferent2
+8=indifferent2
+9=indifferent3
+10=indifferent3
+11=pasdejeu1
+12=pasdejeu2
+13=pasdejeu3
+14=dujeuenSud
+15=dujeuenSud
+16=dujeuenSud
+
+[dujeuenSud]
+phmin=15 00 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+[indifferent1]
+phmin=10 12 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+[indifferent2]
+phmin=10 00 12 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+[indifferent3]
+phmin=10 00 00 12 00 00
+phmax=40 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+
+
+[pasdejeu1]
+phmin=04 12 00 00 00 00
+phmax=14 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+
+[pasdejeu2]
+phmin=04 00 12 00 00 00
+phmax=14 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+
+[pasdejeu3]
+phmin=04 00 00 12 00 00
+phmax=14 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+
+

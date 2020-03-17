@@ -1,0 +1,2 @@
+CN => simplifié => HANS
+TW => HANT

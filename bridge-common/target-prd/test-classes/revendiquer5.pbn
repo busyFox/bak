@@ -1,0 +1,19 @@
+[Dealer "W"]
+[Vulnerable "ALL"]
+[Deal "W:952.K842.8753.K8 874.Q653.AT.AQ93 AKQT3.9.Q42.JT76 J6.AJT7.KJ96.542"]
+[Contract "4H"]
+[Declarer "N"]
+[Result "8"]
+[Auction "W"]
+Pass 1C 1S X
+2S 3H 3S 4H
+Pass Pass Pass
+[Play "E"]
+SA S6 S2 S4
+SK SJ S5 S7
+CJ C2 CK CA
+H9 HT HK H3
+CT C4 C8 C9
+C7 C5 H4 C3
+D2 D6 D7 DT
+*

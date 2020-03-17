@@ -1,0 +1,16 @@
+[Dealer "E"]
+[Vulnerable "ALL"]
+[Deal "E:T9743.832.K642.Q 85.Q754.AQ8.9832 A62.AKJ.JT9753.T KQJ.T96..AKJ7654"]
+[Contract "2C"]
+[Declarer "N"]
+[Result "11"]
+[Auction "E"]
+Pass Pass 1D 2C
+Pass Pass Pass
+[Play "E"]
+D4 DQ D7 H6
+D2 DA D5 H9
+CQ C2 CT CA
+S3 S5 SA SQ
+D6 D8 DJ C4
+*

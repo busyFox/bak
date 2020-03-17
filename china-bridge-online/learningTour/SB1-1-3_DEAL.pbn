@@ -1,0 +1,18 @@
+[Dealer "S"]
+[Vulnerable "EW"]
+[SouthType "human"]
+[WestType "program"]
+[NorthType "program"]
+[EastType "program"]
+[Deal "S:A32.A32.A32.A432 QT6.KQJT9.987.KQ 987.54.K54.98765 KJ54.876.QJT6.JT"]
+[Contract "1N"]
+[Declarer "S"]
+[Result "8"]
+[Player_profile "Majeure 5ème - Compétition 02010000011000001111011111111111111001112111111123310"]
+[Chapter "SB1-1-3"]
+[UseBids "true"]
+[Auction "S"]
+1NT Pass Pass Pass  
+[Play "W"]
+HK - - -
+*

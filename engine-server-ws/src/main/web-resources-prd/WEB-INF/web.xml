@@ -1,0 +1,86 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/classes/ServerBeans.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Jersey servlet -->
+	<servlet>
+		<servlet-name>WSRESTJersey</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <!-- Set application configuration -->
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>com.gotogames.bridge.engineserver.ws.ApplicationConfig</param-value>
+        </init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WSRESTJersey</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+
+    <!-- Chat Webservlet -->
+    <servlet>
+        <servlet-name>wsChat</servlet-name>
+        <servlet-class>com.gotogames.bridge.engineserver.ws.servlet.ChatWebSocketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wsChat</servlet-name>
+        <url-pattern>/wschat</url-pattern>
+    </servlet-mapping>
+
+    <!--&lt;!&ndash; Engine Webservlet &ndash;&gt;-->
+    <!--<servlet>-->
+        <!--<servlet-name>wsEngine</servlet-name>-->
+        <!--<servlet-class>com.gotogames.bridge.engineserver.ws.servlet.EngineWebSocketServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>wsEngine</servlet-name>-->
+        <!--<url-pattern>/wsengine</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--&lt;!&ndash; FBServer Webservlet &ndash;&gt;-->
+    <!--<servlet>-->
+        <!--<servlet-name>wsFBServer</servlet-name>-->
+        <!--<servlet-class>com.gotogames.bridge.engineserver.ws.servlet.FBServerWebSocketServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>wsFBServer</servlet-name>-->
+        <!--<url-pattern>/wsfbserver</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <security-constraint>
+		<display-name>Administration Funbridge</display-name>
+		<web-resource-collection>
+			<web-resource-name>Security</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>funbridge</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>Funbridge Administration</realm-name>
+	</login-config>
+	<security-role>
+		<description>Administrator</description>
+		<role-name>funbridge</role-name>
+	</security-role>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

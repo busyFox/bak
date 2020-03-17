@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{DEFAULT}] [%5p] [%t] %c{1}:%M:%L - %m%n"/>
+        </Console>
+        <!--LOG SERVER-->
+        <RollingFile name="file" fileName="${env:SERVER_LOG}/china-bridge-online/server.log" append="true" filePattern="${env:SERVER_LOG}/china-bridge-online/server-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- set level for logger to debug else error is the default level ! -->
+        <Logger name="com.funbridge" level="debug" additivity="false">
+            <!-- Now set the level for each appender -->
+            <AppenderRef ref="console" level="debug"/>
+            <AppenderRef ref="file" level="info"/>
+            <AppenderRef ref="fileLogmatic" level="warn"/>
+        </Logger>
+        <Logger name="com.funbridge.server.store" level="info" additivity="false">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="fileLogmatic" level="info"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="fileLogmatic"/>
+        </Root>
+    </Loggers>
+</Configuration>

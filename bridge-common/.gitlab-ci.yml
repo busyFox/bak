@@ -1,0 +1,98 @@
+# Cache downloaded dependencies and plugins between builds (Not strictly necessary, but speeds up the builds)
+cache:
+  key: "$CI_JOB_NAME"
+  paths:
+    # Must be within the repository under test hence we can't use the default ~/.m2
+    - .m2/repository
+variables:
+  # Use the cached directory above.
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+# Stages to run
+stages:
+  - test
+  - build-integ
+  - build-gamesdev
+  - build-prd
+  - release
+
+# Testing (Code Quality)
+sonar:
+  stage: test
+  tags:
+    - maven
+  only:
+    - recette
+  script:
+    - "mvn -B verify sonar:sonar -Dsonar.host.url=$SONAR_URL -Dsonar.login=$SONAR_LOGIN -Dsonar.password=$SONAR_PWD"
+
+# ------------------------------ #
+# Environment = Integration
+# ------------------------------ #
+# Build and deploy (Build the artifacts and upload them to the Nexus)
+build-integ:
+  stage: build-integ
+  allow_failure: false
+  tags:
+    - maven
+  variables:
+    MAVEN_PROFILE: "integ"
+  script:
+    - "mvn clean deploy -P$MAVEN_PROFILE"
+
+# ------------------------------ #
+# Environment = Gamesdev (Recette only)
+# ------------------------------ #
+# Build and deploy (Build the artifacts and upload them to the Nexus)
+build-gamesdev-only-recette:
+  stage: build-gamesdev
+  only:
+    - recette
+  allow_failure: false
+  tags:
+    - maven
+  variables:
+    MAVEN_PROFILE: "gamesdev"
+  script:
+    - "mvn clean deploy -P$MAVEN_PROFILE"
+
+
+# ------------------------------ #
+# Environment = Prd
+# ------------------------------ #
+# Build and deploy (Build the artifacts and upload them to the Nexus)
+build-prd:
+  stage: build-prd
+  allow_failure: false
+  tags:
+    - maven
+  only:
+    - master
+  variables:
+    MAVEN_PROFILE: "prd"
+  script:
+    - "mvn clean deploy -P$MAVEN_PROFILE"
+
+# Release (Release the version, upload it to Nexus, update the pom.xml, push it and merge into the branch recette)
+release:
+  stage: release
+  when: manual
+  allow_failure: false
+  dependencies:
+    - build-prd
+  tags:
+    - maven
+  only:
+    - master
+  variables:
+    MAVEN_PROFILE: "prd"
+  script:
+    - git config --global user.name "root"
+    - git config --global user.email "devserveur@goto-games.com"
+    - "git remote set-url origin http://root:$GITLAB_PWD@gitlab.csgames.net/server/funbridge/bridge-common.git"
+    - "git checkout -B master"
+    - mvn -B -P$MAVEN_PROFILE release:prepare -Darguments="-DskipTests"
+    - mvn -B -P$MAVEN_PROFILE release:perform -Darguments="-DskipTests"
+    - "git checkout recette && git pull origin recette --no-commit"
+    - git merge master -m "[Skip CI] Merge branch 'master' into recette"
+    - "git push --set-upstream origin recette"

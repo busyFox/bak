@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{DEFAULT}] [%5p] [%t] %c{1}:%M:%L - %m%n"/>
+        </Console>
+        <!--LOG SERVER-->
+        <RollingFile name="file" fileName="${env:ENGINE_SERVER_HOME}/serverLog/server.log" append="true" filePattern="${env:ENGINE_SERVER_HOME}/serverLog/server-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+        <!--LOG LOGMATIC-->
+        <RollingFile name="fileLogmatic" fileName="${env:ENGINE_SERVER_HOME}/serverLog/serverLogmatic.log" append="true" filePattern="${env:ENGINE_SERVER_HOME}/serverLog/serverLogmatic-%d{yyyy-MM-dd}.log">
+            <JSONLayout complete="true" compact="true" eventEol="true" locationInfo="true"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+        <!--LOG STAT MANAGER-->
+        <RollingFile name="fileLogStat" fileName="${env:ENGINE_SERVER_HOME}/serverLog/serverLogstat.log" append="true" filePattern="${env:ENGINE_SERVER_HOME}/serverLog/serverLogstat-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- set level for logger to debug else error is the default level ! -->
+        <Logger name="com.gotogames" level="debug" additivity="false">
+            <!-- Now set the level for each appender -->
+            <AppenderRef ref="console" level="debug"/>
+            <AppenderRef ref="file" level="info"/>
+            <AppenderRef ref="fileLogmatic" level="warn"/>
+        </Logger>
+        <Logger name="com.gotogames.bridge.engineserver.common.LogStatMgr" level="info" additivity="false">
+            <AppenderRef ref="fileLogStat"/>
+            <AppenderRef ref="fileLogmatic"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="fileLogmatic"/>
+        </Root>
+    </Loggers>
+</Configuration>

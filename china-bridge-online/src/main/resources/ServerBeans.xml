@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <!-- scan package to detect beans -->
+    <context:component-scan base-package="com.funbridge.server"/>
+
+    <!-- ************************************************************************************* -->
+    <!-- Persistence Unit Manager -->
+    <bean id="persistenceUnitManager" class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager">
+        <property name="persistenceXmlLocations">
+            <list>
+                <value>classpath:META-INF/persistence.xml</value>
+            </list>
+        </property>
+    </bean>
+    <!-- Entity Manager using persistence unit manager -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceUnitManager" ref="persistenceUnitManager"/>
+    </bean>
+    <!-- bean TransactionManager -->
+    <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <!-- ************************************************************************************* -->
+    <!-- declaration to enable annotation -->
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+    <!-- declaration to enable persistence annotation -->
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+
+
+    <context:property-placeholder location="classpath:resources.properties"/>
+
+    <!-- ************************************************************************************* -->
+    <!-- Mongo DB declaration -->
+    <mongo:mongo-client id="mongo" replica-set="${mongodb.replicaSet}" credentials="${mongodb.user.username}:${mongodb.user.password}@${mongodb.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.connectTimeout}"
+                socket-timeout="${mongodb.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoDbFactory" dbname="${mongodb.database}" mongo-ref="mongo"/>
+    <bean id="mongoTemplate" name="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB SERIE declaration -->
+    <mongo:mongo-client id="mongoSerie" replica-set="${mongodb.serie.replicaSet}" credentials="${mongodb.serie.user.username}:${mongodb.serie.user.password}@${mongodb.serie.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.serie.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.serie.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.serie.connectTimeout}"
+                socket-timeout="${mongodb.serie.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoSerieDbFactory" dbname="${mongodb.serie.database}" mongo-ref="mongoSerie"/>
+    <mongo:mapping-converter id="mappingMongoSerieConverter" base-package="com.funbridge.server.tournament.serie" db-factory-ref="mongoSerieDbFactory">
+        <mongo:custom-converters>
+            <mongo:converter>
+                <bean class="com.funbridge.server.tournament.serie.data.TourSerieTournamentWriteConverter"/>
+            </mongo:converter>
+            <mongo:converter>
+                <bean class="com.funbridge.server.tournament.serie.data.TourSerieTournamentReadConverter"/>
+            </mongo:converter>
+        </mongo:custom-converters>
+    </mongo:mapping-converter>
+    <bean id="mongoSerieTemplate" name="mongoSerieTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoSerieDbFactory"/>
+        <constructor-arg name="mongoConverter" ref="mappingMongoSerieConverter"/>
+    </bean>
+
+    <!-- Mongo DB TRAINING declaration -->
+    <mongo:mongo-client id="mongoTraining" replica-set="${mongodb.training.replicaSet}" credentials="${mongodb.training.user.username}:${mongodb.training.user.password}@${mongodb.training.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.training.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.training.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.training.connectTimeout}"
+                socket-timeout="${mongodb.training.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTrainnigDbFactory" dbname="${mongodb.training.database}" mongo-ref="mongoTraining"/>
+    <bean id="mongoTrainingTemplate" name="mongoTrainnigTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTrainnigDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB TIMEZONE declaration -->
+    <mongo:mongo-client id="mongoTimezone" replica-set="${mongodb.timezone.replicaSet}" credentials="${mongodb.timezone.user.username}:${mongodb.timezone.user.password}@${mongodb.timezone.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.timezone.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.timezone.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.timezone.connectTimeout}"
+                socket-timeout="${mongodb.timezone.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTimezoneDbFactory" dbname="${mongodb.timezone.database}" mongo-ref="mongoTimezone"/>
+    <bean id="mongoTimezoneTemplate" name="mongoTimezoneTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTimezoneDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB DUEL declaration -->
+    <mongo:mongo-client id="mongoDuel" replica-set="${mongodb.duel.replicaSet}" credentials="${mongodb.duel.user.username}:${mongodb.duel.user.password}@${mongodb.duel.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.duel.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.duel.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.duel.connectTimeout}"
+                socket-timeout="${mongodb.duel.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoDuelDbFactory" dbname="${mongodb.duel.database}" mongo-ref="mongoDuel"/>
+    <bean id="mongoDuelTemplate" name="mongoDuelTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDuelDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB HANDICAP declaration -->
+    <mongo:mongo-client id="mongoHandicap" replica-set="${mongodb.handicap.replicaSet}" credentials="${mongodb.handicap.user.username}:${mongodb.handicap.user.password}@${mongodb.handicap.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.handicap.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.handicap.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.handicap.connectTimeout}"
+                socket-timeout="${mongodb.handicap.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoHandicapDbFactory" dbname="${mongodb.handicap.database}" mongo-ref="mongoHandicap"/>
+    <bean id="mongoHandicapTemplate" name="mongoHandicapTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoHandicapDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB TOUR COMMENTS declaration -->
+    <mongo:mongo-client id="mongoTourComments" replica-set="${mongodb.tourComments.replicaSet}" credentials="${mongodb.tourComments.user.username}:${mongodb.tourComments.user.password}@${mongodb.tourComments.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.tourComments.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.tourComments.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.tourComments.connectTimeout}"
+                socket-timeout="${mongodb.tourComments.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTourCommentsDbFactory" dbname="${mongodb.tourComments.database}" mongo-ref="mongoTourComments"/>
+    <bean id="mongoTourCommentsTemplate" name="mongoTourCommentsTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTourCommentsDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB TourCBO declaration -->
+    <mongo:mongo-client id="mongoTourCBO" replica-set="${mongodb.tourCBO.replicaSet}" credentials="${mongodb.tourCBO.user.username}:${mongodb.tourCBO.user.password}@${mongodb.tourCBO.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.tourCBO.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.tourCBO.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.tourCBO.connectTimeout}"
+                socket-timeout="${mongodb.tourCBO.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTourCBODbFactory" dbname="${mongodb.tourCBO.database}" mongo-ref="mongoTourCBO"/>
+    <bean id="mongoTourCBOTemplate" name="mongoTourCBOTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTourCBODbFactory"/>
+    </bean>
+
+    <!-- Mongo DB Team declaration -->
+    <mongo:mongo-client id="mongoTeam" replica-set="${mongodb.team.replicaSet}" credentials="${mongodb.team.user.username}:${mongodb.team.user.password}@${mongodb.team.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.team.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.team.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.team.connectTimeout}"
+                socket-timeout="${mongodb.team.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTeamDbFactory" dbname="${mongodb.team.database}" mongo-ref="mongoTeam"/>
+    <bean id="mongoTeamTemplate" name="mongoTeamTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTeamDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB Chat declaration -->
+    <mongo:mongo-client id="mongoChat" replica-set="${mongodb.chat.replicaSet}" credentials="${mongodb.chat.user.username}:${mongodb.chat.user.password}@${mongodb.chat.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.chat.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.chat.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.chat.connectTimeout}"
+                socket-timeout="${mongodb.chat.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoChatDbFactory" dbname="${mongodb.chat.database}" mongo-ref="mongoChat"/>
+    <bean id="mongoChatTemplate" name="mongoChatTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoChatDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB PrivateTournament declaration -->
+    <mongo:mongo-client id="mongoPrivateTournament" replica-set="${mongodb.privateTournament.replicaSet}" credentials="${mongodb.privateTournament.user.username}:${mongodb.privateTournament.user.password}@${mongodb.privateTournament.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.privateTournament.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.privateTournament.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.privateTournament.connectTimeout}"
+                socket-timeout="${mongodb.privateTournament.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoPrivateTournamentDbFactory" dbname="${mongodb.privateTournament.database}" mongo-ref="mongoPrivateTournament"/>
+    <bean id="mongoPrivateTournamentTemplate" name="mongoPrivateTournamentTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoPrivateTournamentDbFactory"/>
+    </bean>
+
+    <!-- Mongo DB TOUR LEARNING declaration -->
+    <mongo:mongo-client id="mongoTourLearning" replica-set="${mongodb.tourLearning.replicaSet}" credentials="${mongodb.tourLearning.user.username}:${mongodb.tourLearning.user.password}@${mongodb.tourLearning.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.tourLearning.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.tourLearning.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.tourLearning.connectTimeout}"
+                socket-timeout="${mongodb.tourLearning.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoTourLearningDbFactory" dbname="${mongodb.tourLearning.database}" mongo-ref="mongoTourLearning"/>
+    <bean id="mongoTourLearningTemplate" name="mongoTourLearningTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoTourLearningDbFactory"/>
+    </bean>
+
+    <!-- ************************************************************************************* -->
+    <!-- MongoEvent callback -->
+    <bean id="tourSerieGameMongoEvent" name="tourSerieGameMongoEvent" class="com.funbridge.server.tournament.serie.data.event.TourSerieGameMongoEvent"/>
+    <bean id="serieTopChallengeGameMongoEvent" name="serieTopChallengeGameMongoEvent" class="com.funbridge.server.tournament.serie.data.event.SerieTopChallengeGameMongoEvent"/>
+    <bean id="serieEasyChallengeGameMongoEvent" name="serieEasyChallengeGameMongoEvent" class="com.funbridge.server.tournament.serie.data.event.SerieEasyChallengeGameMongoEvent"/>
+    <bean id="timezoneGameMongoEvent" name="timezoneGameMongoEvent" class="com.funbridge.server.tournament.timezone.data.TimezoneGameMongoEvent"/>
+    <bean id="trainingGameMongoEvent" name="trainingGameMongoEvent" class="com.funbridge.server.tournament.training.data.TrainingGameMongoEvent"/>
+    <bean id="duelGameMongoEvent" name="duelGameMongoEvent" class="com.funbridge.server.tournament.duel.data.DuelGameMongoEvent"/>
+    <bean id="tourCBOGameMongoEvent" name="tourCBOGameMongoEvent" class="com.funbridge.server.tournament.federation.cbo.data.TourCBOGameMongoEvent"/>
+    <bean id="teamGameMongoEvent" name="teamGameMongoEvent" class="com.funbridge.server.tournament.team.data.TeamGameMongoEvent"/>
+    <bean id="privateGameMongoEvent" name="privateGameMongoEvent" class="com.funbridge.server.tournament.privatetournament.data.PrivateGameMongoEvent"/>
+    <bean id="learningGameMongoEvent" name="learningGameMongoEvent" class="com.funbridge.server.tournament.learning.data.LearningGameMongoEvent"/>
+
+    <!-- ************************************************************************************* -->
+    <!-- Scheduled tasks -->
+    <task:annotation-driven executor="taskExecutor" scheduler="taskScheduler"/>
+    <task:executor id="taskExecutor" pool-size="5"/>
+    <task:scheduler id="taskScheduler" pool-size="10"/>
+
+</beans>

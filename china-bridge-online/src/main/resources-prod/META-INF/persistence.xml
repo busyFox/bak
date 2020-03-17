@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+			 xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="funbridge3"
+					  transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		<properties>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="root"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://172.16.150.83:3306/chinabridge?autoReconnect=true"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.connection.provider_class" value="org.hibernate.c3p0.internal.C3P0ConnectionProvider"/>
+			<property name="hibernate.c3p0.max_size" value="100"/>
+			<property name="hibernate.c3p0.min_size" value="10"/>
+			<property name="hibernate.c3p0.timeout" value="600"/>
+			<property name="hibernate.id.new_generator_mappings" value="false"/>
+		</properties>
+
+	</persistence-unit>
+</persistence>

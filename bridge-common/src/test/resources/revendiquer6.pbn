@@ -1,0 +1,19 @@
+[Dealer "N"]
+[Vulnerable "NONE"]
+[Deal "N:KT8.72.KQ82.KJ96 AJ9.865.643.5432 7543.AQT.AJT.AQ7 Q62.KJ943.975.T8"]
+[Contract "3NT"]
+[Declarer "N"]
+[Result "9"]
+[Auction "N"]
+1D Pass 1S Pass
+1NT Pass 3NT Pass
+Pass Pass
+[Play "E"]
+C4 CA C8 C6
+C2 CQ CT C9
+C3 C7 D5 CK
+H5 HT HJ H7
+SJ S3 S2 ST
+H6 HA H4 H2
+D3 DA D7 D2
+*

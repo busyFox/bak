@@ -1,0 +1,19 @@
+[Dealer "W"]
+[Vulnerable "EW"]
+[SouthType "human"]
+[WestType "program"]
+[NorthType "program"]
+[EastType "program"]
+[Deal "W:K9762.9.875.JT94 T4.KJ5.AQ93.7652 QJ3.A8732.642.Q3 A85.QT64.KJT.AK8"]
+[Contract "3N"]
+[Declarer "S"]
+[Result "10"]
+[Chapter "SB1-3-1"]
+[Auction "W"]
+Pass Pass Pass 1N 
+Pass 3N Pass  Pass 
+Pass
+[Play "W"]
+S6 - - -
+*
+

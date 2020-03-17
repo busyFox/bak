@@ -1,0 +1,72 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/classes/ServerBeans.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Jersey servlet -->
+	<servlet>
+		<servlet-name>WSRESTJersey</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <!-- Set application configuration -->
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>com.funbridge.server.ws.ApplicationConfig</param-value>
+        </init-param>
+		<!--<init-param>-->
+            <!--<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>-->
+            <!--<param-value>true</param-value>-->
+        <!--</init-param>-->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WSRESTJersey</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Security -->
+	<security-constraint>
+		<display-name>Administration Funbridge</display-name>
+		<web-resource-collection>
+			<web-resource-name>Security</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+			<url-pattern>/support/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>funbridgeAdmin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>Funbridge Administration</realm-name>
+	</login-config>
+	<security-role>
+		<description>Administrator</description>
+		<role-name>funbridgeAdmin</role-name>
+	</security-role>
+	
+	<!-- Default page -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<!-- Chat Webservlet -->
+	<servlet>
+		<servlet-name>wsChat</servlet-name>
+		<servlet-class>com.funbridge.server.ws.servlet.ChatWebSocketServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>wsChat</servlet-name>
+		<url-pattern>/wschat</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="engine-server-ws:war">
+    <output-path>$PROJECT_DIR$/../engine-server-ws/target-dev</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>engine-server-ws</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="engine-server-ws.war">
+      <element id="artifact" artifact-name="engine-server-ws:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,25 @@
+package com.funbridge.server.ws.pay.alipay;
+
+public class AlipayConfig {
+
+
+    public static String ALIPAY_URL = "https://openapi.alipay.com/gateway.do";
+
+    public static String APP_ID = "2019112569414583";
+
+    public static String PAY_METHOD = "alipay.trade.app.pay";
+
+    public static String TRANSFER_METHOD = "alipay.fund.trans.toaccount.transfer";
+
+    public static String FORMAT = "JSON";
+
+    public static String CHARSET = "utf-8";
+
+    public static String SIGN_TYPE = "RSA2";
+
+    public static String ALIPAY_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkdhZtBGvNre61se34RSQcjmPtiqsv3LyxWI2pLXDjQnYn4+zQTRv83NTRY7OOauiMXO2fnk16Er9ZLb5O0Tf2kXFpsyYBJklXgmUp8Q3PTKxHIHHJlB1izXiCfXAnMPY9DXEXqPxZxIEjWRkFDxp7TDWEP00QIuCvAp+rlV8Jdx5UCM13tNlgVdYCYmmW7EsEjpJSjcc5JQlD2L754MB2cqX7JDlbRMMYRvpwc6X/MePJSG9SC2+Vx1NS/IUHjDunS7xSLG7eGYaFl5LeMsHZAaa/Z/hc9+eTaNTj7VYN6wkNwbneMWnEjukeCdeV39hm990jyI7hLL4i32fXs+pAwIDAQAB";
+
+    public static String PRIVATE_KEY = "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCttksZPWpGHBIlBQoDl/jczkITJmCSLPN7WxXsFicLJFvKxszX2x7SrWXIu/LfF7lksaAq+uPRYqV4y12CaL8gTXntF0psrxs2Irq9UgnEpCaDBloOZL/Mwr78Xyt+4n1WQk0Q/cdRrVB/ruiQkCXELGwCjwW/ZBvSOiT3Y0B0s+6GFoCMlDxKUQBAXvwTb5AqL9huy5fA79NDB1dkf9MnTwlMh3QCr6uAs3vcSyeqyJDhBV5eFVnUO5wuLc2sS3MqI+IVr1Z32V0LjBlURuW1aU8Clm0XOkZ6FRG6EFSybdvzcFH0ozOssmcCmMNC7K4Yg+DZITN85hFjxyPdAZgZAgMBAAECggEBAKQdQT4LQ8gQ5SOMazWR8k/Jnasx6rKvPSkhmMh+9UwVgZNF1mloXupzX2ISDxat9z0mg0eX2HwNUn+YwjNeepMuHy7bfjjIBlFS5lHOm+PnoWrQKWzHylzM8FrGHvW1TOydnumamSCVOSQoPxe017lKrpCMRsXW8mHfBOWkI1Ucw1fX9GHKMFhtU6Ow6vue/JfMKrHOkbriErn8Y2mpQgRPmGUipUhstBMPJo+20zvy/Mcnv4iidWrA7wepZX5Go4Vi043cK/THBsIbPu3oR6UAZemLLUIK8NfGEIJPt5tHts4OSumxpta5J6PEfcW8uTQ+avr4Z1bO7m/QWx+4bvECgYEA/yd9i6BYV2f2FhOimJYUx458oWjScxR6U/1vHZ51mdsKi+UvWNGzUakXRQWiokGKSccsxVewgNEhMkWdlf+3wbqubkzFIzeXU2Luv1vhhm3sbc4ilrBGLbtSMshiTzBYC4vLg0r5qOi65zn3FWmGRJuMI/QOJkhawDaxM5hy4msCgYEArkmyGCjBHqR6QUdtQdkaLudxg3kLCjS8wUsfRglmDA78UBGL1CmExnfjbCWbhrTIOQBTL9JfO49sRadM7xZ9OfHBl4FWUlbrgpE0T5iKufAuQo8pb4LJe0EF8zPETrp3x52Wg5PtpUI41Ui9D4AD9mi1pzDGGtHZcKM5tz4b+IsCgYAhrknRQ5JFv3Bpi5/7+lu11+Y1vEuDa2GWcq7XPxKRA6wJuXAdjljYX7S1pL/KIVKq2ILdbezbpD94jl317fKIvSbHYpTnSDBOjpGrauqDP0FlYT+Jmq043jBEidUIVP5aT9LGewAnvsjlOu6Vwf86UToXiODRRt3L36xWfjo0DwKBgHEQR+OaVKXfR5wfjQZBo9W3uRD0LjBBxA2VAUW7BSNfeVkr+Mz63jKuRa+7uegqURWBW3XTgIov4apR/PvBWB2F8vOpKOmjj4aVUh0stRoocKonG1dGvhQiO4zpETmNh/TMC39yMKGbkyjx1gw/HNL2XJmIb4uohOmoSeHQ/e4/AoGBAKze9a9oDyH+MqrDErqAPFMITqIO8MStousOGZ+fPyYMd2Pv+eYaUo4RSyrroQIqvubq9/6mmu1YlYd9Vp3Y3LA8DqN0IjSNhUCflHwDsMzbjkI8IP9SAHK8RBbD2Z0LPsgpkaPmS1PtM7PTKlnlnE1DPSJOqMhn7+sMwfsx4Ecl";
+
+    public static String CALLBACK_URL = "http://chinabridge.ourgame.com:8080/china-bridge-online/rest/pay/alicallback";
+}

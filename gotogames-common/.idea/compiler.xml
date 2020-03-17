@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gotogames-common" />
+      </profile>
+      <profile name="Annotation profile for bridge-common" enabled="true">
+        <sourceOutputDir name="target-dev/generated-sources/annotations" />
+        <sourceTestOutputDir name="target-dev/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bridge-common" />
+        <module name="china-bridge-online" />
+        <module name="engine-server-ws" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bridge-common" target="1.7" />
+      <module name="china-bridge-online" target="1.8" />
+      <module name="engine-server-ws" target="1.8" />
+      <module name="gotogames-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

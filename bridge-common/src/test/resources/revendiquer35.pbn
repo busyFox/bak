@@ -1,0 +1,13 @@
+[Dealer "S"]
+[Vulnerable "NONE"]
+[Deal "S:2.AQJT9..A987632 4..T765432.KQJT5 AKQJT98653.43.A. 7.K87652.KQJ98.4"]
+[Contract "7S"]
+[Declarer "S"]
+[Result "12"]
+[Auction "S"]
+7S Pass Pass Pass
+[Play "W"]
+CK S3 C4 CA
+S4 SJ S7 S2
+C5 H3 H7 HA
+*

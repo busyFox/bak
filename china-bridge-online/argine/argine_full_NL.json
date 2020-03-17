@@ -1,0 +1,1156 @@
+{
+    "profiles": [
+        {
+            "id": 1,
+            "name": "Standaard Amerikaans SAYC - beginner",
+            "small_name": "SAYC_1",
+            "value": "00001100002001013001110000000000000000000000000000000"
+        },
+        {
+            "id": 2,
+            "name": "Standaard Amerikaans SAYC - gemiddeld",
+            "small_name": "SAYC_2",
+            "value": "01001100002001013001111111101101110000102100101120000"
+        },
+        {
+            "id": 3,
+            "name": "Standaard Amerikaans SAYC - competitief",
+            "small_name": "SAYC_3",
+            "value": "02011100002001113101111111111111111001112111111120010"
+        },
+        {
+            "id": 4,
+            "name": "Frans vijfkaart hoog - beginner",
+            "small_name": "MAJ5_1",
+            "value": "00000000000000000001010000000000000000000000000000000"
+        },
+        {
+            "id": 5,
+            "name": "Frans vijfkaart hoog - gemiddeld",
+            "small_name": "MAJ5_2",
+            "value": "01000000001000001001011111101101110000102100101120000"
+        },
+        {
+            "id": 6,
+            "name": "Frans vijfkaart hoog - competitief",
+            "small_name": "MAJ5_3",
+            "value": "02010000001000101111011111111111111001112111111120010"
+        },
+        {
+            "id": 7,
+            "name": "Engels Acol - beginner",
+            "small_name": "ACOL_1",
+            "value": "20102222100000000002110000000001000000000000000000000"
+        },
+        {
+            "id": 8,
+            "name": "Engels Acol - gemiddeld",
+            "small_name": "ACOL_2",
+            "value": "21102222101000001002111111101101110000102100101120000"
+        },
+        {
+            "id": 9,
+            "name": "Engels Acol - competitief",
+            "small_name": "ACOL_3",
+            "value": "22112222101000001112111111111111111001112111111120010"
+        },
+        {
+            "id": 10,
+            "name": "Pools - beginner",
+            "small_name": "POLISH_1",
+            "value": "30003333200000000001010000000000000000000000000000000"
+        },
+        {
+            "id": 11,
+            "name": "Pools - gemiddeld",
+            "small_name": "POLISH_2",
+            "value": "31003333201000001001011111101001110000102100101120000"
+        },
+        {
+            "id": 12,
+            "name": "Pools - competitief",
+            "small_name": "POLISH_3",
+            "value": "32013333201000101111011111111111111001112111111120010"
+        },
+        {
+            "id": 13,
+            "name": "Frans vijfkaart hoog - sterke twee",
+            "small_name": "MAJ5_OLD",
+            "value": "00001222100000000001010000000000000000000000000000000"
+        },
+        {
+            "id": 14,
+            "name": "Gratis profiel",
+            "small_name": "Libre",
+            "value": null
+        }
+    ],
+    "groups": [
+        {
+            "title": "Betekenis van openingen",
+            "conventions": [
+                {
+                    "id": 0,
+                    "name": "Gekozen systeem voor de volgende openingen op 1-niveau",
+                    "desc": "Het gaat om de vier volgende openingen: 1#C/1#D/1#H/1#S\n\n",
+                    "values": [
+                        {
+                            "name": "Better minor",
+                            "desc": "Als u een lage kleur opent, kiest u uw langste. Met gelijke lengte opent u met 1#D, behalve met een 3/3 in de lage kleuren, dan opent u 1#C.\nVoor een opening in een hoge kleur heeft u ten minste vijf kaarten in die kleur nodig."
+                        },
+                        {
+                            "name": "Vierkaart #D",
+                            "desc": "Als u een lage kleur opent, kiest u uw langste, behalve met 3#D en 2#C, dan opent u 1#C. Met gelijke lengte opent u 1#D, behalve met een 3/3 in de lage kleuren, dan opent u 1#C. \nVoor een opening in een hoge kleur heeft u ten minste vijf kaarten in die kleur nodig."
+                        },
+                        {
+                            "name": "ACOL",
+                            "desc": "Open uw langste kleur in zowel de lage als de hoge kleuren."
+                        },
+                        {
+                            "name": "Poolse #C ",
+                            "desc": "De 1#C opening is kunstmatig: of 18+ punten of 12-14 punten met een verdeelde hand.\nAlle andere openingen op het 1-niveau beloven ten minste een vijfkaart."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 1,
+                    "name": "Minimum aantal punten voor een opening op 1-niveau.",
+                    "desc": "Met minder dan 12 punten opent noord met ten minste 14HD.",
+                    "values": [
+                        {
+                            "name": "12 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "11 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "10 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "9 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "13 punten",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 2,
+                    "name": "Kracht van een 1#N opening.",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "15-17 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "12-14 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "16-18 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "14-16 punten",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 3,
+                    "name": "Een vijfkaart hoog bij een 1#N opening",
+                    "desc": "Natuurlijk: zolang de hand wat betreft verdeling en kracht voldoet aan de vereisten voor een 1#N opening.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 4,
+                    "name": "Betekenis va een 2#C opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Semi-forcing",
+                            "desc": "18-23 punten met een goede lange kleur of 22-23 punten met een verdeelde hand"
+                        },
+                        {
+                            "name": "ACOL",
+                            "desc": "Mancheforcing: 24+ of een hand die sterk genoeg is om de manche of eigen kracht te bieden"
+                        },
+                        {
+                            "name": "Sterke twee",
+                            "desc": "18-23 punten en een goede zeskaart #C."
+                        },
+                        {
+                            "name": "Poolse sterke twee",
+                            "desc": "11-15 punten met een vijfkaart #C en een vierkaart in een hoge kleur of ten minste een zeskaart #C."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 5,
+                    "name": "Betekenis van een 2#D opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "ACOL",
+                            "desc": "24+ punten of een hand die sterk genoeg is om zelf de manche te maken (minimaal 16 punten)."
+                        },
+                        {
+                            "name": "Natuurlijke zwakke twee",
+                            "desc": "5-10 punten met een goede zeskaart #D."
+                        },
+                        {
+                            "name": "Natuurlijke sterke twee",
+                            "desc": "18-23 punten met een goede zeskaart #D."
+                        },
+                        {
+                            "name": "Multi 2#D",
+                            "desc": "5-10 punten met een zeskaart #H of #S."
+                        },
+                        {
+                            "name": "Wilkosz",
+                            "desc": "5-10 punten met een tweekleurenspel waarvan ten minste één hoge kleur."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 6,
+                    "name": "Betekenis van een 2#H opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Natuurlijke zwakke twee",
+                            "desc": "5-10 punten met een goede zeskaart #H."
+                        },
+                        {
+                            "name": "Muiderberg 5/5",
+                            "desc": "5-10 HCP punten met een tweekleurenspel met 5#H en een vijfkaart laag."
+                        },
+                        {
+                            "name": "Natuurlijke sterke twee",
+                            "desc": "18-23 punten met een goede zeskaart #H."
+                        },
+                        {
+                            "name": "Muiderberg 5/4",
+                            "desc": "5-10 punten met een tweerkleurenspel met 5#H en ten minste een vierkaart laag."
+                        },
+                        {
+                            "name": "Tweekleurenspel met #H en een andere kleur",
+                            "desc": "5-10 punten met een tweekleurenspel met ten minste 5# en een andere onbekende vierkaart."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 7,
+                    "name": "Betekenis van een 2#S opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Natuurlijke zwakke twee",
+                            "desc": "5-10 punten met een goede zeskaart #S"
+                        },
+                        {
+                            "name": "Muiderberg 5/5",
+                            "desc": "5-10 punten met een tweekleurenspel met 5#S en een vijfkaart laag."
+                        },
+                        {
+                            "name": "Natuurlijke sterke twee",
+                            "desc": "18-23 punten en een goede zeskaart #S."
+                        },
+                        {
+                            "name": "Muiderberg 5/4",
+                            "desc": "5-10 punten met een tweekleurenspel met 5#S en ten minste een vierkaart laag."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 8,
+                    "name": "Betekenis van een 2#N opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "20-21 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "20-22 punten",
+                            "desc": null
+                        },
+                        {
+                            "name": "Tweekleurenspel met beide lage kleuren",
+                            "desc": "5-10 punten met een tweekleurenspel met ten minste 5#C en 5#D."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 9,
+                    "name": "Minimale kwaliteit van een kleur voor een pre-empt",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Klassiek",
+                            "desc": "5-10 punten en een goede kleur: twee tophonneurs of drie honneurs."
+                        },
+                        {
+                            "name": "Agressief",
+                            "desc": "4-9 punten en ten minste één tophonneur of twee honneurs."
+                        },
+                        {
+                            "name": "Terrorist",
+                            "desc": "2-8 punten en geen minimaal aantal honneurs.\n\n"
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 10,
+                    "name": "Betekenis van een 3#N opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Deze opening wordt niet gebruikt",
+                            "desc": null
+                        },
+                        {
+                            "name": "Gambling",
+                            "desc": "Een dichte lage kleur (ten minste een zevenkaart) zonder een aas of heer ernaast."
+                        },
+                        {
+                            "name": "25-27 punten",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 11,
+                    "name": "Namyats ",
+                    "desc": "Een 4#C opening toont een 4#H opening met ten hoogste één verliezer in de troefkleur. Een 4#D opening toont een 4#S opening met ten hoogste één verliezer in de troefkleur.\nHet openen van 4#H of 4#S toont handen met een minder goede kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "title": "Betekenis van antwoorden op een opening",
+            "conventions": [
+                {
+                    "id": 12,
+                    "name": "2#H over 1#C/#D",
+                    "desc": "Op een opening van een lage kleur toont het bieden van 2#H ten minste 5#S en 4#H en 5-9 punten.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 13,
+                    "name": "Forcing 1#N antwoord",
+                    "desc": "Na het antwoorden van een forcing 1#N op een opening in een hoge kleur moet de openaar nog een keer bieden.\nHij mag niet passen op 1#N en met een 5332 biedt hij zijn beste lage kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 14,
+                    "name": "1#N met fit en een zwakke hand",
+                    "desc": "Met fit en te weinig punten om de opening van één in een hoge kleur te verhogen naar het 2-niveau, kan 1NT geboden worden. Hier zit dan dus ook de hand met 3-5 punten en fit.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 15,
+                    "name": "2/1 Mancheforcing",
+                    "desc": "Op een opening in een hoge kleur toont een nieuwe kleur op 2-niveau zonder sprong een mancheforcing hand. Met handen die niet sterk genoeg zijn biedt u 1#N.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 16,
+                    "name": "2#N over 1#H/#S",
+                    "desc": "De betekenis van een 2#N antwoord op een opening in een hoge kleur.",
+                    "values": [
+                        {
+                            "name": "11 punten en geen fit",
+                            "desc": null
+                        },
+                        {
+                            "name": "10-11 punten met een driekaartsfit",
+                            "desc": null
+                        },
+                        {
+                            "name": "11-14 punten met een driekaartsfit",
+                            "desc": null
+                        },
+                        {
+                            "name": "Jacoby",
+                            "desc": "Ten minste een driekaart fit met genoeg punten voor de manche. Partner biedt hierna zijn korte kleur. Logischerwijs toont een directe verhoging met sprong drie of vier troeven."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 17,
+                    "name": "Antwoorden met sprong",
+                    "desc": "Betekenis van een antwoord in een nieuwe kleur met sprong na een opening van één in een hoge kleur.",
+                    "values": [
+                        {
+                            "name": "Sterk",
+                            "desc": "16 punten en een goede zeskaart."
+                        },
+                        {
+                            "name": "Inviterend",
+                            "desc": "Aanmoedigend zonder fit, met 9-11 punten en een zeskaart."
+                        },
+                        {
+                            "name": "Natuurlijk met fit",
+                            "desc": "Een vijfkaart in de geboden kleur en een vierkaart fit voor de openingskleur. Inviterend."
+                        },
+                        {
+                            "name": "Bergen",
+                            "desc": "Een antwoord van 3#C toont 10-11 punten met een vierkaart fit. 3#D toont 7-9 punten en een vierkaart fit. 3 in de openingskleur toont 4-6 punten en een vierkaart fit."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 18,
+                    "name": "3#N als antwoord op 1#H/#S",
+                    "desc": "De betekenis van een 3#N antwoord na een opening van één in een hoge kleur.",
+                    "values": [
+                        {
+                            "name": "12-15 punten zonder fit",
+                            "desc": null
+                        },
+                        {
+                            "name": "11-14 punten met een vierkaart fit",
+                            "desc": null
+                        },
+                        {
+                            "name": "11-14 punten met een drie- of vierkaart fit",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 19,
+                    "name": "Antwoorden op een 1#N opening",
+                    "desc": "Betekenis van de antwoorden op een 1#N opening.",
+                    "values": [
+                        {
+                            "name": "Stayman zonder transfers",
+                            "desc": null
+                        },
+                        {
+                            "name": "Stayman met transfers",
+                            "desc": null
+                        },
+                        {
+                            "name": "Stayman met drie antwoordmogelijkheden en transfers",
+                            "desc": "Met een vierkaart 4#H en een vierkaart 4#S antwoordt u 2#H op Stayman."
+                        },
+                        {
+                            "name": "Stayman en Jacoby.",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 20,
+                    "name": "Antwoorden op een mancheforcing 2#C of 2#D opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Azen aangeven",
+                            "desc": "U biedt de kleur waarin u een aas heeft.\nN.B. Na een 2#D opening toont 2#S een willekeurige aas in een hoge kleur."
+                        },
+                        {
+                            "name": "Natuurlijk",
+                            "desc": "U doet het opvolgende bod met 0-7 punten. Andere biedingen zijn natuurlijk en tonen minsten 8 punten."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 21,
+                    "name": "Antwoorden op een 2#N opening",
+                    "desc": "Betekenis van de antwoorden op een 2#N opening.",
+                    "values": [
+                        {
+                            "name": "Stayman zonder transfers naar de lage kleuren",
+                            "desc": null
+                        },
+                        {
+                            "name": "Stayman met transfers naar zowel de hoge als de lage kleuren",
+                            "desc": null
+                        },
+                        {
+                            "name": "Niemeijer met transfers naar zowel de hoge als de lage kleuren",
+                            "desc": "Niemeijer (3#C) vraagt naar zowel een vier- als een vijfkaart hoog bij de openaar.\n"
+                        }
+                    ],
+                    "type": null
+                }
+            ]
+        },
+        {
+            "title": "Afspraken in ongestoord bieden",
+            "conventions": [
+                {
+                    "id": 22,
+                    "name": "Roudi",
+                    "desc": "Keuze van vervolg van het biedverloop na een 1#N herbieding door de openaar.",
+                    "values": [
+                        {
+                            "name": "Natuurlijk",
+                            "desc": null
+                        },
+                        {
+                            "name": "Roudi met vier antwoordmogelijkheden",
+                            "desc": "2#C vraagt de openaar naar zijn kracht en of hij een driekaart heeft in de kleur van de antwoordende hand."
+                        },
+                        {
+                            "name": "Ping-pong",
+                            "desc": "Na een 2#C bod moet de openaar 2#D bieden."
+                        },
+                        {
+                            "name": "Roudi met drie antwoordmogelijkheden",
+                            "desc": "2#C vraagt de openaar naar zijn kracht en of hij een driekaart heeft in de kleur van de antwoordende hand. Het is nu niet mogelijk om 2#N te herbieden."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 23,
+                    "name": "Derde kleur forcing",
+                    "desc": "Als de openaar zijn kleur herhaalt en de antwoordende hand biedt een nieuwe kleur, dan toont dit niets bijzonders in die specifieke kleur, maar het maakt het bieden forcing.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 24,
+                    "name": "Vierde kleur forcing",
+                    "desc": "Als de eerste vier biedingen in drie verschillende kleuren waren, is het bieden van de vierde kleur kunstmatig. Het maakt het bieden forcing en vraagt de openaar zijn hand verder te omschrijven.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 25,
+                    "name": "Blackwood",
+                    "desc": "4#N wordt gebruikt om de partner te vragen naar het aantal azen of keycards dat hij heeft. Als u keycard Blackwood speelt, telt troefheer mee als 'vijfde aas'.",
+                    "values": [
+                        {
+                            "name": "Klassiek 30/41",
+                            "desc": "De antwoorden zijn: 5#C = 0 of 3 azen, 5#D = 1 of 4 azen, 5#H = 2 azen zonder troefheer, 5#S = 2 azen met troefheer."
+                        },
+                        {
+                            "name": "Keycards 30/41",
+                            "desc": "De antwoorden zijn: 5#C = 0 of 3 keycards, 5#D = 1 of 4 keycards, 5#H = 2 of 5 keycards zonder troefvrouw, 5#S = 2 keycards met troefvrouw."
+                        },
+                        {
+                            "name": "Klassiek 41/30",
+                            "desc": "De antwoorden zijn: 5#C = 1 of 4 azen, 5#D = 0 of 3 azen, 5#H = 2 azen zonder troefheer, 5#S = 2 azen met troefheer."
+                        },
+                        {
+                            "name": "Keycards 41/30 ",
+                            "desc": "De antwoorden zijn: 5#C = 1 of 4 keycards, 5#D = 0 of 3 keycards, 5#H = 2 of 5 keycards zonder troefvrouw, 5#S = 2 keycards met troefvrouw."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 26,
+                    "name": "Drury",
+                    "desc": "Na een opening van één in een hoge kleur in de derde of vierde positie, toont 2#C een maximale voorpas met fit. Verder vraagt het de openaar naar de kwaliteit van zijn opening.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 27,
+                    "name": "Accepteer transfers alleen met fit",
+                    "desc": "Het alleen maar accepteren van transfers naar een hoge kleur met na een 2#N opening of herbieding.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 28,
+                    "name": "Checkback Stayman",
+                    "desc": "Een conventie waarbij er 3#C wordt geboden na een 2#N herbiedigen van de openaar. Hiermee kan gevraagd worden naar een driekaart fit in de geantwoorde hoge kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 29,
+                    "name": "Splinter",
+                    "desc": "Een (dubbele) sprong naar een nieuwe kleur toont kortheid (een renonce of singleton) in de geboden kleur en fit in de laatstgeboden kleur van de partner.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 30,
+                    "name": "2#D transfer naar harten na de volgende bieding: 1#S 1#N 2#C",
+                    "desc": "Na de volgende bieding: 1#S 1#N 2#C<br> \n2#D toont een vijfkaart #H en een doubleton #S of een vijfkaart #H en een vierkaart #C<br>\n2#H toont een vijfkaart #H met een misfit of een zeskaart #H.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "title": "Betekenis van antwoorden na een volgbod",
+            "conventions": [
+                {
+                    "id": 31,
+                    "name": "\"Collante\" convention",
+                    "desc": "Na een volgbod op 1-niveau van 1#D of 1#H, toont het bieden van de opvolgende kleur een vijfkaart. Doublet toont een vierkaart in de opvolgende kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 32,
+                    "name": "Truscott",
+                    "desc": "Na een volgbod met sprong is het bieden van de openingskleur op 3-niveau zwak en toont 2#N een inviterende hand.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 33,
+                    "name": "Verdediging tegen het volgen over een 1#N opening",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Natuurlijk",
+                            "desc": null
+                        },
+                        {
+                            "name": "Rubensohl",
+                            "desc": "2#N tot en met 3#S zijn transfers."
+                        },
+                        {
+                            "name": "Lebensohl",
+                            "desc": "2#N toont een hand die wil strijden om de deelscore met een onbekende kleur. Op 3-niveau is alles natuurlijk en forcing."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 34,
+                    "name": "Landik",
+                    "desc": "Na een opening van één in een lage kleur en een 1#N volgbod, toont 2#C een tweekleurenspel met minstens een 5/4 in de hoge kleuren.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 35,
+                    "name": "Transfers nadat de tegenpartij 1#N volgt.",
+                    "desc": "Na een opening op 1-niveau, gevolgd door een 1#N volgbod, zijn alle biedingen door de partner van de openaar transfer.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 36,
+                    "name": "Rodrigue",
+                    "desc": "Na een volgbod van 1#S toont het bieden van de lage kleur van de openaar op 2-niveau een vijfkaart #H met 5-9 punten.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 37,
+                    "name": "Verdediging tegen een 2#N volgbod dat beide lage kleuren toont",
+                    "desc": "Na een opening van één in een hoge kleur, gevolgd door een 2#N volgbod biedt de antwoordende hand 3#C om een goede hand met #H aan te geven en 3#D om een goede hand met #S aan te geven. Het direct bieden van 3#H of 3#S is slechts competitief voor de deelscore.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "title": "Betekenis van volgbiedingen en de antwoorden op volgbiedingen",
+            "conventions": [
+                {
+                    "id": 38,
+                    "name": "Tweekleurenspel",
+                    "desc": "Volgbiedingen die een tweekleurenspel tonen.",
+                    "values": [
+                        {
+                            "name": "Geen tweekleurenspellen",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ghestem",
+                            "desc": "2#N toont altijd de twee laagst overgebleven kleuren. Na een opening van één in een lage kleur toont 2#D beide hoge kleuren. Na een opening van één in een hoge kleur toont het directe cuebid de andere hoge kleur en #C. Om de andere hoge kleur en #D te tonen dient u 3#C te bieden."
+                        },
+                        {
+                            "name": "Michael's Cuebid ",
+                            "desc": "2#N toont altijd de twee laagste overgebleven kleuren. Na een opening van één in een lage kleur toont 2#D beide hoge kleuren. Na een opening van één in een hoge kleur toont het directe cuebid de andere hoge kleur en een onbekende lage kleur."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 39,
+                    "name": "Tweekleurenspel op 4-niveau na het openen van een zwakke twee",
+                    "desc": "4#C toont de andere hoge kleur en #D. 4#D toont de andere hoge kleur en #C.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 40,
+                    "name": "Het doubleren van een 1#N opening",
+                    "desc": "De betekenis van een doublet op een 1#N opening.",
+                    "values": [
+                        {
+                            "name": "Straf",
+                            "desc": "U denkt dat de tegenstanders dit contract niet gaan halen."
+                        },
+                        {
+                            "name": "Take-out doublet voor de hoge kleuren",
+                            "desc": "Een hand waarmee u een opening van 1#C of 1#D gedoubleerd zou hebben."
+                        },
+                        {
+                            "name": "Een lage kleur en een hoge kleur",
+                            "desc": "Een hand met openingskracht met zowel een vijfkaart laag als een vierkaart hoog."
+                        },
+                        {
+                            "name": "Landy",
+                            "desc": "Een tweekleurenspel met ten minste een 5/4 in de hoge kleuren."
+                        },
+                        {
+                            "name": "5#C + 4#H/#S",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 41,
+                    "name": "2#C volgbod over 1#N ",
+                    "desc": "De betekenis van een 2#C volgbod na een opening van 1#N.",
+                    "values": [
+                        {
+                            "name": "Natuurlijk",
+                            "desc": null
+                        },
+                        {
+                            "name": "Landy",
+                            "desc": "Een tweekleurenspel met ten minste een 5/4 in de hoge kleuren."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 42,
+                    "name": "2#D volgbod over 1#N ",
+                    "desc": "De betekenis van een 2#D volgbod na een opening van 1#N.",
+                    "values": [
+                        {
+                            "name": "Natuurlijk",
+                            "desc": null
+                        },
+                        {
+                            "name": "Multi",
+                            "desc": "2#D toont een onbekende zeskaart in een hoge kleur. Daarom tonen zowel 2#H als 2#S een vijfkaart in de geboden kleur en een vierkaart laag erbij. Deze conventie vervalt in de uitpas."
+                        },
+                        {
+                            "name": "5#D + 4#H/#S",
+                            "desc": null
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 43,
+                    "name": "1#N in de uitpas",
+                    "desc": "Bied 1#N om een omgekeerde 6/4 aan te geven: een zeskaart in de laagste kleur en een vierkaart in de hoogste kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 44,
+                    "name": "Preemptieve volgbiedingen",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 45,
+                    "name": "2#N is Lebensohl nadat een zwakke opening op twee niveau is gedoubleerd",
+                    "desc": "2#N toont 8-10 punten en direct een kleur bieden toont minder dan 8 punten.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                },
+                {
+                    "id": 46,
+                    "name": "Sprongbod in een andere kleur toont de geboden kleur en fit na een volgbod van partner",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "title": "Uitkomen en signaleren",
+            "conventions": [
+                {
+                    "id": 47,
+                    "name": "Uitkomen tegen #N",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Geen betekenis",
+                            "desc": null
+                        },
+                        {
+                            "name": "Vierde van boven",
+                            "desc": "U start de vierde van boven van uw langste kleur."
+                        },
+                        {
+                            "name": "Derde of vijfde van boven",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom start u een kleintje met een oneven aantal en een hoge kaart gevolgd door een lagere met een even aantal."
+                        },
+                        {
+                            "name": "Kleintje plaatje",
+                            "desc": "Met een honneur in de kleur start u een kleintje. Zonder honneur start u een hoge kaart."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 48,
+                    "name": "Uitkomen tegen een troefcontract",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Geen betekenis",
+                            "desc": null
+                        },
+                        {
+                            "name": "Vierde van boven",
+                            "desc": "U start de vierde van boven van uw langste kleur."
+                        },
+                        {
+                            "name": "Derde of vijfde van boven",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom start u een kleintje met een oneven aantal en een hoge kaart gevolgd door een lagere met een even aantal."
+                        },
+                        {
+                            "name": "Kleintje plaatje",
+                            "desc": "Met een honneur in de kleur start u een kleintje. Zonder honneur start u een hoge kaart."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 49,
+                    "name": "Signaleren bij niet-bekennen in #N",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Geen betekenis",
+                            "desc": null
+                        },
+                        {
+                            "name": "Italiaans",
+                            "desc": "U gooit een oneven kaart af in de kleur waarin u iets heeft, en een even kaart in een kleur waarin u niets heeft."
+                        },
+                        {
+                            "name": "Hoog-laag even",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom gooit u een kleintje met een oneven aantal en een hoge kaart gevolgd door een lagere met een even aantal."
+                        },
+                        {
+                            "name": "Hoog is aan",
+                            "desc": "U gooit een hoge kaart af in de kleur waarin u iets heeft, en een lage kaart in een kleur waarin u niets heeft."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 50,
+                    "name": "Signaleren bij niet-bekennen in een troefcontract",
+                    "desc": null,
+                    "values": [
+                        {
+                            "name": "Geen betekenis",
+                            "desc": null
+                        },
+                        {
+                            "name": "Italiaans",
+                            "desc": "U gooit een oneven kaart af in de kleur waarin u iets heeft, en een even kaart in een kleur waarin u niets heeft."
+                        },
+                        {
+                            "name": "Hoog-laag even",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom gooit u een kleintje met een oneven aantal en een hoge kaart gevolgd door een lagere met een even aantal."
+                        },
+                        {
+                            "name": "Hoog is aan",
+                            "desc": "U gooit een hoge kaart af in de kleur waarin u iets heeft, en een lage kaart in een kleur waarin u niets heeft."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 51,
+                    "name": "Signaleren bij bekennen",
+                    "desc": "Betekenis van het spelen van een kaart in de voorgespeelde kleur.",
+                    "values": [
+                        {
+                            "name": "Geen betekenis",
+                            "desc": null
+                        },
+                        {
+                            "name": "Hoog-laag even",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom gooit u een kleintje met een oneven aantal en een hoge kaart gevolgd door een lagere met een even aantal."
+                        },
+                        {
+                            "name": "Laag-hoog even",
+                            "desc": "U probeert aan te geven of u een even of oneven aantal kaarten in de kleur heeft. Daarom gooit u een hoge kaart met een oneven aantal en een kleintje gevolgd door een hogere met een even aantal."
+                        }
+                    ],
+                    "type": null
+                },
+                {
+                    "id": 52,
+                    "name": "Kleurvoorkeur",
+                    "desc": "U probeert kleurvoorkeur aan te geven: als u uw partner een introever geeft of als de dummy nog maar een singleton heeft, dan vraagt een kleintje naspelen om een terugkomst in de laagst overgebleven kleur en een hoge kaart kaart vraagt om een terugkomst in de hoogst overgebleven kleur. De overgebleven kleuren zijn de kleuren buiten troef en de gespeelde kleur.",
+                    "values": [
+                        {
+                            "name": "Nee",
+                            "desc": null
+                        },
+                        {
+                            "name": "Ja",
+                            "desc": null
+                        }
+                    ],
+                    "type": "bool"
+                }
+            ]
+        }
+    ]
+}

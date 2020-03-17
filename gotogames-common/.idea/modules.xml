@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bridge-common/bridge-common.iml" filepath="$PROJECT_DIR$/../bridge-common/bridge-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../china-bridge-online/china-bridge-online.iml" filepath="$PROJECT_DIR$/../china-bridge-online/china-bridge-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../engine-server-ws/engine-server-ws.iml" filepath="$PROJECT_DIR$/../engine-server-ws/engine-server-ws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gotogames-common.iml" filepath="$PROJECT_DIR$/gotogames-common.iml" />
+    </modules>
+  </component>
+</project>

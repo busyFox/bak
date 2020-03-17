@@ -1,0 +1,2 @@
+<%@ page import="com.funbridge.server.common.ContextManager" %>
+<table><tr><td bgcolor="<%=ContextManager.getPresenceMgr().isServiceMaintenance()?"#FF0000":"#00FF00"%>"><b>SERVICE FUNBRIDGE <%=ContextManager.getPresenceMgr().isServiceMaintenance()?"FAILED":"OK"%></b></td></tr></table>

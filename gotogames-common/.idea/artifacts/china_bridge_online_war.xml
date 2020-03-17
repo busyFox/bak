@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="china-bridge-online:war">
+    <output-path>$PROJECT_DIR$/../china-bridge-online/target-dev</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>china-bridge-online</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="china-bridge-online.war">
+      <element id="artifact" artifact-name="china-bridge-online:war exploded" />
+    </root>
+  </artifact>
+</component>

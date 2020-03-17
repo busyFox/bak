@@ -1,0 +1,34 @@
+{
+  "profiles": [
+    {
+      "id": "1",
+      "name": "Sans signification",
+      "small_name": "NO_MEANING",
+      "value": "000000"
+    },
+    {
+      "id": "2",
+      "name": "Classique",
+      "small_name": "CLASSIC",
+      "value": "123310"
+    },
+    {
+      "id": "3",
+      "name": "Profil libre",
+      "small_name": "Libre",
+      "value": null
+    },
+    {
+      "id": "4",
+      "name": "Standard chinois",
+      "small_name": "CHINESE",
+      "value": "124411"
+    },
+    {
+      "id": "5",
+      "name": "UDCA (standard am\u00e9ricain)",
+      "small_name": "UDCA",
+      "value": "445521"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[Date ""]
+[Board "2"]
+[Dealer "E"]
+[Vulnerable "NS"]
+[SouthType "human"]
+[WestType "program"]
+[NorthType "program"]
+[EastType "program"]
+[Deal "E:J96.QJT54.AK2.QT AQ.K73.QJ973.A85 T8743.862.86.J42 K52.A9.T54.K9763"]
+[Contract "3N"]
+[Declarer "S"]
+[Result "9"]
+[Chapter "SB1-8-1"]
+[Auction "E"]
+1H 1NT Pass 3N
+Pass Pass Pass
+[Play "W"]
+H2 - - -
+*
+
+

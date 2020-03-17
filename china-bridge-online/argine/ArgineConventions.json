@@ -1,0 +1,200 @@
+{
+  "profiles": [
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "1",
+      "name": "SAYC - D\u00e9butant",
+      "small_name": "SAYC_1",
+      "value": "00001100002001013001110000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, 2way chechback, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "2",
+      "name": "SAYC - Interm\u00e9diaire",
+      "small_name": "SAYC_2",
+      "value": "01001100002001013001115111101102110000102100101012"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "3",
+      "name": "SAYC - Comp\u00e9tition",
+      "small_name": "SAYC_3",
+      "value": "02011100012001113101111111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, roudi, Blackwood 30\\/41 classique, pas de bicolore.",
+      "id": "4",
+      "name": "Majeure 5\u00e8me - D\u00e9butant",
+      "small_name": "MAJ5_1",
+      "value": "00000000000000000001010000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "5",
+      "name": "Majeure 5\u00e8me - Interm\u00e9diaire",
+      "small_name": "MAJ5_2",
+      "value": "01000000001000001001011111101101110000102100101011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "6",
+      "name": "Majeure 5\u00e8me - Comp\u00e9tition",
+      "small_name": "MAJ5_3",
+      "value": "02010000011000101111011111111111111001112111111011"
+    },
+    {
+      "description": "SA12-14, ACOL, 2K/C/P faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "7",
+      "name": "ACOL - D\u00e9butant",
+      "small_name": "ACOL_1",
+      "value": "20101100100000003002110000000001000000000000000011"
+    },
+    {
+      "description": "ACOL, SA 12-14, 2K\\/C\\/P faible, stayman et texas, 2SA fitt\u00e9, 4\u00e8me forcing, Blackwood 04\\/1\\/2\\/3, splinter, checkback stayman, collante, truscott, michael?s non pr\u00e9cis\u00e9s.",
+      "id": "8",
+      "name": "ACOL - Interm\u00e9diaire",
+      "small_name": "ACOL_2",
+      "value": "21111100101000003002114014001102100000300100101012"
+    },
+    {
+      "description": "SA12-14, ACOL, 2K/C/P faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "9",
+      "name": "ACOL - Comp\u00e9tition",
+      "small_name": "ACOL_3",
+      "value": "22111100111000003012111111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, 1T polish, 2K multi, 2C/P Muiderberg, 2SA les mineures, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "10",
+      "name": "Syst\u00e8me Polonais - D\u00e9butant",
+      "small_name": "POLISH_1",
+      "value": "30003333200000000001010000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, 1T polish, 2K multi, 2C\\/P Muiderberg, 2SA les mineures, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "11",
+      "name": "Syst\u00e8me Polonais - Interm\u00e9diaire",
+      "small_name": "POLISH_2",
+      "value": "31003333201000001001011111101001110000102100101012"
+    },
+    {
+      "description": "SA15-17, 1T polish, 2K multi, 2C/P Muiderberg, 2SA les mineures, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "12",
+      "name": "Syst\u00e8me Polonais - Comp\u00e9tition",
+      "small_name": "POLISH_3",
+      "value": "32013333211000101111011111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2T albarran, 2 fort, stayman et texas, roudi, Blackwood 30\\/41 classique, pas de bicolore.",
+      "id": "13",
+      "name": "Majeure 5\u00e8me - 2 fort",
+      "small_name": "MAJ5_OLD",
+      "value": "00001222100000000001010000000000000000000000000011"
+    },
+    {
+      "description": "Conventions d\u00e9finies par le joueur.",
+      "id": "14",
+      "name": "Profil libre",
+      "small_name": "Libre",
+      "value": null
+    },
+    {
+      "description": "ACOL, SA12-14, 2K\\/C\\/P fort, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "15",
+      "name": "ACOL - 2 fort",
+      "small_name": "ACOL_OLD",
+      "value": "21101222101000003002111111101101110000102100101011"
+    },
+    {
+      "description": "SA15-17, ACOL, 2K/C/P faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "16",
+      "name": "Nordisk Standard - D\u00e9butant",
+      "small_name": "NORDIC_1",
+      "value": "20001100110000000002110000000001000000000000000011"
+    },
+    {
+      "description": "ACOL, SA15-17, 2K\\/C\\/P faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "17",
+      "name": "Nordisk Standard - Interm\u00e9diaire",
+      "small_name": "NORDIC_2",
+      "value": "21001100111000001002111111101101110000102100101012"
+    },
+    {
+      "description": "SA15-17, ACOL, 2K/C/P faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "18",
+      "name": "Nordisk Standard - Comp\u00e9tition",
+      "small_name": "NORDIC_3",
+      "value": "22011100111000001112111111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, K4\u00e8me, 2 faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "19",
+      "name": "NBB Standaard Hoog - D\u00e9butant",
+      "small_name": "NBB_1",
+      "value": "10001100000000000001010000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, K4\u00e8me, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "20",
+      "name": "NBB Standaard Hoog - Interm\u00e9diaire",
+      "small_name": "NBB_2",
+      "value": "11001100001000001001011111101101110000102100101011"
+    },
+    {
+      "description": "SA15-17, K4\u00e8me, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "21",
+      "name": "NBB Standaard Hoog - Comp\u00e9tition",
+      "small_name": "NBB_3",
+      "value": "12011100011000001111011111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore, 1SA forcing sur 1 majeure, 2/1 forcing manche.",
+      "id": "22",
+      "name": "2/1 - D\u00e9butant",
+      "small_name": "2_1_1",
+      "value": "00001100002001013001110000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, 2way chechback, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, 1SA forcing sur 1 majeure, 2\\/1 forcing manche.",
+      "id": "23",
+      "name": "2/1 - Interm\u00e9diaire",
+      "small_name": "2_1_2",
+      "value": "01001100002001013001115111101102110000102100101012"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage, 1SA forcing sur 1 majeure, 2/1 forcing manche.",
+      "id": "24",
+      "name": "2/1 - Comp\u00e9tition",
+      "small_name": "2_1_3",
+      "value": "02011100012001013101111111111111111001112111111011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, roudi, Blackwood 30/41 classique, pas de bicolore.",
+      "id": "25",
+      "name": "Forum D - D\u00e9butant",
+      "small_name": "FORUMD_1",
+      "value": "00000000000000000001010000000000000000000000000011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "26",
+      "name": "Forum D - Interm\u00e9diaire",
+      "small_name": "FORUMD_2",
+      "value": "01000000001000001001011111101101110000102100101011"
+    },
+    {
+      "description": "SA15-17, meilleure mineure, 2 faible, stayman et texas, 2SA fitt\u00e9, roudi, 3\u00e8me et 4\u00e8me forcing, Blackwood 30/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s, landik, landy, rectification fitt\u00e9e sur 2SA, ouverture agressive en barrage.",
+      "id": "27",
+      "name": "Forum D - Comp\u00e9tition",
+      "small_name": "FORUMD_3",
+      "value": "02010000011000001111011111111111111001112111111011"
+    },
+    {
+      "description": "Tr\u00e8fle fort, K4\u00e8me, SA13-15, 2T pr\u00e9cision, 2K tricolore court \u00e0 K, 2 faible, 2 stayman (faible et FM), texas, 2SA fitt\u00e9, 2way chechback, 3\u00e8me et 4\u00e8me forcing, Blackwood 30\\/41 5 cl\u00e9s, drury, splinter, checkback stayman, collante, rubensohl, truscott, bicolore, michael?s pr\u00e9cis\u00e9s.",
+      "id": "28",
+      "name": "Pr\u00e9cision (standard chinois)",
+      "small_name": "CHINESE",
+      "value": "51403544001030014144046013100101120001210111111000"
+    }
+  ]
+}

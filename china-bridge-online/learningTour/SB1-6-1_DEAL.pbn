@@ -1,0 +1,18 @@
+[Dealer "E"]
+[Vulnerable "ALL"]
+[SouthType "human"]
+[WestType "program"]
+[NorthType "program"]
+[EastType "program"]
+[Deal "E:JT93.AK.JT87.976 42.QJ98.AQ4.KQ32 8765.653.K96.T84 AKQ.T742.532.AJ5"]
+[Contract "4H"]
+[Declarer "N"]
+[Result "10"]
+[Chapter "SB1-6-1"]
+[Auction "E"]
+Pass 1C Pass 1H 
+Pass 2H Pass 4H 
+Pass Pass Pass
+[Play "E"]
+SJ - - -
+*

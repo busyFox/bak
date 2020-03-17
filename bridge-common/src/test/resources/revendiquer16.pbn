@@ -1,0 +1,17 @@
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:AK6.J72.J3.AQ872 JT987.K96.T8762. Q2.T43.K954.K965 543.AQ85.AQ.JT43"]
+[Contract "3NT"]
+[Declarer "S"]
+[Result "8"]
+[Auction "S"]
+1C Pass 1D Pass
+2NT Pass 3NT Pass
+Pass Pass
+[Play "W"]
+SJ S2 S3 SA
+D2 CK C4 C2
+D6 C5 CT CA
+S8 SQ S4 S6
+H6 C9 C3 C7
+*

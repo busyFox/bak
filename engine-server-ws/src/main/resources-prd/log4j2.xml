@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!--LOG SERVER-->
+        <RollingFile name="file" fileName="/var/lib/tomcat7/logs/engine-server-$VERSION$/server.log" append="true" filePattern="/var/lib/tomcat7/logs/engine-server-$VERSION$/server-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+        <!--LOG LOGMATIC-->
+        <RollingFile name="fileLogmatic" fileName="/var/lib/tomcat7/logs/engine-server-$VERSION$/serverLogmatic.log" append="true" filePattern="/var/lib/tomcat7/logs/engine-server-$VERSION$/serverLogmatic-%d{yyyy-MM-dd}.log">
+            <JSONLayout complete="true" compact="true" eventEol="true" locationInfo="true"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+        <!--LOG STAT MANAGER-->
+        <RollingFile name="fileLogStat" fileName="/var/lib/tomcat7/logs/engine-server-$VERSION$/serverLogstat.log" append="true" filePattern="/var/lib/tomcat7/logs/engine-server-$VERSION$/serverLogstat-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{HH:mm:ss,SSS} %5p [%t] %c{1}-%M:%L - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- set level for logger to debug else error is the default level ! -->
+        <Logger name="com.gotogames" level="warn" additivity="false">
+            <!-- Now set the level for each appender -->
+            <AppenderRef ref="file" level="warn"/>
+            <AppenderRef ref="fileLogmatic" level="warn"/>
+        </Logger>
+        <Logger name="com.gotogames.bridge.engineserver.common.LogStatMgr" level="info" additivity="false">
+            <AppenderRef ref="fileLogStat"/>
+            <AppenderRef ref="fileLogmatic"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="fileLogmatic"/>
+        </Root>
+    </Loggers>
+</Configuration>

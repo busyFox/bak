@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+			
+	<!-- scan package to detect beans -->
+	<context:component-scan base-package="com.gotogames.bridge.engineserver"/>
+
+    <context:property-placeholder location="classpath:resources.properties"/>
+
+    <!-- ************************************************************************************* -->
+    <!-- Mongo DB declaration -->
+    <mongo:mongo-client id="mongo" replica-set="${mongodb.replicaSet}" credentials="${mongodb.user.username}:${mongodb.user.password}@${mongodb.user.db}">
+        <mongo:client-options
+                connections-per-host="${mongodb.connectionsPerHost}"
+                threads-allowed-to-block-for-connection-multiplier="${mongodb.threadsAllowedToBlockForConnectionMultiplier}"
+                connect-timeout="${mongodb.connectTimeout}"
+                socket-timeout="${mongodb.socketTimeout}"/>
+    </mongo:mongo-client>
+    <mongo:db-factory id="mongoDbFactory" dbname="${mongodb.database}" mongo-ref="mongo"/>
+    <bean id="mongoTemplate" name="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
+    </bean>
+
+    <!-- ************************************************************************************* -->
+    <!-- Redis declaration -->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig"
+          p:maxTotal="${redis.poolMaxTotal}"
+          p:maxIdle="${redis.poolMaxIdle}"/>
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:host-name="${redis.host}"
+          p:port="${redis.port}"
+          p:database="${redis.database}"
+          p:poolConfig-ref="jedisPoolConfig"/>
+</beans>

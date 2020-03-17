@@ -1,0 +1,30 @@
+[Event "Funbridge"]
+[Site "Funbridge"]
+[Date "2013.01.16"]
+[Board "1"]
+[West "West"]
+[North "North"]
+[East "East"]
+[South "South"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "N:AQ.KQT64.J5.AKJ3. 84.J95.A742.9762. T97652.A.963.Q84. KJ3.8732.KQT8.T5."]
+[Declarer "S"]
+[Contract "4S"]
+[Auction "S"]
+2S Pass 3H Pass
+3S Pass 4S Pass
+Pass Pass
+[Play "W"]
+DK D5 D7 D3
+DQ DJ D2 D6
+D8 SQ D4 D9
+S3 SA S8 S2
+C5 C3 C9 CQ
+SJ H4 S4 ST
+DT H6 DA S5
+SK HT C2 S7
+H2 HQ H5 HA
+CT CJ C6 S9
+*
+[Scoring "IMP"]

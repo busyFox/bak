@@ -1,0 +1,1 @@
+<%@ page import="com.funbridge.server.common.ContextManager" %><%=ContextManager.getPresenceMgr().isServiceMaintenance()?"Oui":"Non"%>

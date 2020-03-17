@@ -1,0 +1,1156 @@
+{
+    "profiles": [
+                 {
+                 "id": 1,
+                 "name": "Standard Américain SAYC - Débutant",
+                 "small_name": "SAYC_1",
+                 "value": "00001100002001013001110000000000000000000000000000000"
+                 },
+                 {
+                 "id": 2,
+                 "name": "Standard Américain SAYC - Intermédiaire",
+                 "small_name": "SAYC_2",
+                 "value": "01001100002001013001111111101101110000102100101120000"
+                 },
+                 {
+                 "id": 3,
+                 "name": "Standard Américain SAYC - Compétition",
+                 "small_name": "SAYC_3",
+                 "value": "02011100002001113101111111111111111001112111111120010"
+                 },
+                 {
+                 "id": 4,
+                 "name": "Système Français Majeure 5ème - Débutant",
+                 "small_name": "MAJ5_1",
+                 "value": "00000000000000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 5,
+                 "name": "Système Français Majeure 5ème - Intermédiaire",
+                 "small_name": "MAJ5_2",
+                 "value": "01000000001000001001011111101101110000102100101120000"
+                 },
+                 {
+                 "id": 6,
+                 "name": "Système Français Majeure 5ème - Compétition",
+                 "small_name": "MAJ5_3",
+                 "value": "02010000001000101111011111111111111001112111111120010"
+                 },
+                 {
+                 "id": 7,
+                 "name": "Système Anglais ACOL - Débutant",
+                 "small_name": "ACOL_1",
+                 "value": "20102222100000000002110000000001000000000000000000000"
+                 },
+                 {
+                 "id": 8,
+                 "name": "Système Anglais ACOL - Intermédiaire",
+                 "small_name": "ACOL_2",
+                 "value": "21102222101000001002111111101101110000102100101120000"
+                 },
+                 {
+                 "id": 9,
+                 "name": "Système Anglais ACOL - Compétition",
+                 "small_name": "ACOL_3",
+                 "value": "22112222101000001112111111111111111001112111111120010"
+                 },
+                 {
+                 "id": 10,
+                 "name": "Système Polonais - Débutant",
+                 "small_name": "POLISH_1",
+                 "value": "30003333200000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 11,
+                 "name": "Système Polonais - Intermédiaire",
+                 "small_name": "POLISH_2",
+                 "value": "31003333201000001001011111101001110000102100101120000"
+                 },
+                 {
+                 "id": 12,
+                 "name": "Système Polonais - Compétition",
+                 "small_name": "POLISH_3",
+                 "value": "32013333201000101111011111111111111001112111111120010"
+                 },
+                 {
+                 "id": 13,
+                 "name": "Système Français Majeure 5ème - 2 fort",
+                 "small_name": "MAJ5_OLD",
+                 "value": "00001222100000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 14,
+                 "name": "Profil libre",
+                 "small_name": "Libre",
+                 "value": null
+                 }
+                 ],
+    "groups": [
+               {
+               "title": "Signification des ouvertures",
+               "conventions": [
+                               {
+                               "id": 0,
+                               "name": "Système d'ouverture choisi pour les ouvertures au palier de un",
+                               "desc": "Il s'agit des 4 ouvertures suivantes : 1#C/1#D/1#H/1#S",
+                               "values": [
+                                          {
+                                          "name": "Meilleure mineure",
+                                          "desc": "En mineure, on ouvre de la mineure la plus longue. A égalité, on ouvre toujours de 1#D sauf avec 3/3, on ouvrira de 1#C. \nEn majeure, il faut 5 cartes minimum pour ouvrir."
+                                          },
+                                          {
+                                          "name": "#D quatrième",
+                                          "desc": "En mineure, on ouvre de la mineure la plus longue (sauf avec 3#D et 2#C on ouvre d' 1#C) à égalité de longueur on ouvre toujours de 1#D sauf avec 3/3 de 1#C. \nEn majeure, il faut 5 cartes minimum pour ouvrir."
+                                          },
+                                          {
+                                          "name": "ACOL",
+                                          "desc": "On ouvre de la couleur la plus longue en mineure et en majeure"
+                                          },
+                                          {
+                                          "name": "#C polonais",
+                                          "desc": "L'ouverture d'1#C est artificelle : avec soit une main forte 18+, soit un jeu régulier 12-14. \nLes autres ouvertures au palier de 1 montrent 5 cartes minimum"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 1,
+                               "name": "Nombre de points d'honneur minimum pour une ouverture au palier de 1",
+                               "desc": "En dessous de 12H, Nord n'ouvrira qu'avec au moins 14DH",
+                               "values": [
+                                          {
+                                          "name": "12H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "11H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "10H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "9H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "13H",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 2,
+                               "name": "Zone de points pour l'ouverture d'1#N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "15-17H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "12-14H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "16-18H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "14-16H",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 3,
+                               "name": "Possibilité d'ouvrir d'1#N avec une majeure 5ème",
+                               "desc": "Bien entendu : à condition d'avoir aussi un jeu régulier et la zone de points adéquat.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 4,
+                               "name": "Signification de l'ouverture de 2#C",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Fort indéterminé",
+                                          "desc": "18-23H et une belle couleur longue ou 22-23H régulier"
+                                          },
+                                          {
+                                          "name": "Albarran",
+                                          "desc": "Forcing manche: 24H et + ou de quoi jouer la manche tout seul"
+                                          },
+                                          {
+                                          "name": "Naturel fort",
+                                          "desc": "18-23H et 6 belles cartes à #C"
+                                          },
+                                          {
+                                          "name": "Naturel polonais",
+                                          "desc": "11-15H avec 5#C et une majeure 4ème ou avec au moins 6#C"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 5,
+                               "name": "Signification de l'ouverture de 2#D",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Forcing manche",
+                                          "desc": "24H et + ou de quoi jouer la manche tout seul (minimum 16H)"
+                                          },
+                                          {
+                                          "name": "Naturel faible",
+                                          "desc": "5-10H et 6 belles cartes à #D"
+                                          },
+                                          {
+                                          "name": "Naturel fort",
+                                          "desc": "18-23H et 6 belles cartes à #D"
+                                          },
+                                          {
+                                          "name": "Multicolore",
+                                          "desc": "5-10H et une main avec 6 cartes à #H ou 6 cartes à #S"
+                                          },
+                                          {
+                                          "name": "Wilkosz",
+                                          "desc": "5-10H avec une main bicolore dont au moins une majeure"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 6,
+                               "name": "Signification de l'ouverture de 2#H",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Naturel faible",
+                                          "desc": "5-10H et 6 belles cartes à #H \n"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/5",
+                                          "desc": "5-10H et un bicolore avec 5#H et une mineure 5ème"
+                                          },
+                                          {
+                                          "name": "Naturel fort",
+                                          "desc": "18-23H et 6 belles cartes à #H"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/4",
+                                          "desc": "5-10H et un bicolore avec 5#H et une mineure au moins 4ème"
+                                          },
+                                          {
+                                          "name": "Bicolore #H et une autre",
+                                          "desc": "5-10H et un bicolore avec 5#H et une autre couleur indéterminée"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 7,
+                               "name": "Signification de l'ouverture de 2#S",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Naturel faible",
+                                          "desc": "5-10H et 6 belles cartes à #S"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/5",
+                                          "desc": "5-10H et un bicolore avec 5#S et une mineure 5ème"
+                                          },
+                                          {
+                                          "name": "Naturel fort",
+                                          "desc": "18-23H et 6 belles cartes à #S"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/4",
+                                          "desc": "5-10H et un bicolore avec 5#S et une mineure au moins 4ème"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 8,
+                               "name": "Signification de l'ouverture de 2#N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "20-21H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "20-22H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Bicolore mineur",
+                                          "desc": "5-10H et un bicolore avec au moins 5#C et 5#D"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 9,
+                               "name": "Qualité de couleur requise pour faire une ouverture de barrage",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Classique",
+                                          "desc": "5-10H et une belle couleur : 2 gros honneurs ou 3 honneurs"
+                                          },
+                                          {
+                                          "name": "Agressif",
+                                          "desc": "4-9H et au minimum un gros honneur ou 2 honneurs"
+                                          },
+                                          {
+                                          "name": "Terroriste",
+                                          "desc": "2-8H et sans critère de qualité de couleur\n\n"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 10,
+                               "name": "Signification de l'ouverture 3#N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Inutilisé",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Gambling",
+                                          "desc": "Une mineure septième maîtresse sans As ni roi annexe\n "
+                                          },
+                                          {
+                                          "name": "25-27H",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 11,
+                               "name": "Jouer la convention Namyats",
+                               "desc": "L'ouverture de 4#C montre une ouverture de 4#H avec maximum une perdante à l'atout et l'ouverture de 4#D montre une ouverture de 4#S avec une perdante maximum à l'atout. \nLes ouvertures directes de 4#H et 4#S montrent des mains avec une moins belle couleur",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Signification des réponses à l'ouverture",
+               "conventions": [
+                               {
+                               "id": 12,
+                               "name": "2#H sur 1#C/#D",
+                               "desc": "En réponse à une ouverture mineure, le saut à 2#H montre au moins 5#S et 4#H dans une main de 5-9H",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 13,
+                               "name": "1#N forcing",
+                               "desc": "Jouer la convention 1#N forcing sur une ouverture majeure oblige l'ouvreur à reparler.  \nIl ne peut laisser 1#N et avec un jeu régulier 5332, il nomme sa meilleure mineure.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 14,
+                               "name": "1#N avec un jeu faible fitté",
+                               "desc": "En réponse à une ouverture majeure, répondre 1#N avec un jeu fitté trop faible pour soutenir au palier de deux (3-5H)\n\n",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 15,
+                               "name": "2/1 Forcing de Manche",
+                               "desc": "En réponse à une ouverture majeure, les changements de couleur sans saut au palier de 2 sont forcing de manche. Les changements 2/1 montrent 12H et plus sinon on dit 1#N.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 16,
+                               "name": "2#N sur 1#H/#S",
+                               "desc": "Signification de 2#N en réponse à une ouverture majeure.",
+                               "values": [
+                                          {
+                                          "name": "Non fitté 11H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Fitté 10-11H et 3 atouts",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Fitté 11-14H et 3 atouts",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Jacoby",
+                                          "desc": "Fit au moins 3ème forcing de manche en face le partenaire nomme ses courtes par inférence le fit direct à saut sur une ouverture majeure montre 3 ou 4 atouts"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 17,
+                               "name": "Réponses à saut",
+                               "desc": "Signification des changements de couleur à saut sur une ouverture majeure. ",
+                               "values": [
+                                          {
+                                          "name": "Fort",
+                                          "desc": "16H et une belle couleur sixième"
+                                          },
+                                          {
+                                          "name": "Limite",
+                                          "desc": "Encourageant sans fit avec 9-11H et une couleur sixième"
+                                          },
+                                          {
+                                          "name": "Naturel fitté",
+                                          "desc": "5 cartes dans la couleur annoncée avec un fit quatrième dans l'ouverture et une main propositionnelle de manche"
+                                          },
+                                          {
+                                          "name": "Bergen",
+                                          "desc": "Le saut à 3#C montre 10-11H et 4 atouts, le saut à 3#D montre 7-9H et 4 atouts, le fit à saut au palier de 3 montre 4-6H et 4 atouts"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 18,
+                               "name": "3#N sur 1#H/#S",
+                               "desc": "En réponse à une ouverture majeure, signification de la réponse 3#N",
+                               "values": [
+                                          {
+                                          "name": "Non fitté 12-15H",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Fitté 11-14H et 4 atouts",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Fitté 11-14H et 3 ou 4 atouts",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 19,
+                               "name": "Réponses à l'ouverture d'1#N",
+                               "desc": "Signification des réponses à l'ouverture de 1#N",
+                               "values": [
+                                          {
+                                          "name": "Stayman sans Texas",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman avec Texas majeur et mineur",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman 3 paliers avec Texas majeur et mineur",
+                                          "desc": "Avec 4#H et 4#S on répond 2#H sur le Stayman"
+                                          },
+                                          {
+                                          "name": " Stayman avec Texas majeur uniquement",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 20,
+                               "name": "Réponses à l'ouverture de 2#C albarran ou de 2#D Forcing Manche",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Couleur de l'As",
+                                          "desc": "On répond la couleur de l'As.\nUne seule ambiguïté: après 2#D, l'enchère de 2#S montre un As majeur."
+                                          },
+                                          {
+                                          "name": "Naturel",
+                                          "desc": "On répond au premier palier avec 0-7H.\nLes autres enchères sont naturelles avec 8H+"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 21,
+                               "name": "Réponses à l'ouverture de 2#N",
+                               "desc": "Signification des réponses sur une ouverture de 2#N.",
+                               "values": [
+                                          {
+                                          "name": "Stayman sans Texas mineur",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman avec Texas majeur et mineur",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Puppet Stayman avec Texas majeur et mineur",
+                                          "desc": "Le puppet Stayman (3#C) permet de rechercher à la fois une majeure 4ème ou 5ème chez l'ouvreur de 2#N\n\n"
+                                          }
+                                          ],
+                               "type": null
+                               }
+                               ]
+               },
+               {
+               "title": "Conventions dans les enchères à deux joueurs ",
+               "conventions": [
+                               {
+                               "id": 22,
+                               "name": "Roudi",
+                               "desc": "Choix des développements après une redemande à 1#N de l'ouvreur",
+                               "values": [
+                                          {
+                                          "name": "Naturel sans relais",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Roudi 4 réponses",
+                                          "desc": "2#C demande à l'ouvreur sa force et s'il a 3 cartes dans la couleur de réponse"
+                                          },
+                                          {
+                                          "name": "Ping-pong",
+                                          "desc": "Sur 2#C l'ouvreur est obligé de dire 2#D"
+                                          },
+                                          {
+                                          "name": "Roudi 3 réponses",
+                                          "desc": "2#C demande à l'ouvreur sa force et s'il a 3 cartes dans la couleur de réponse mais la réponse de 2#N n'existe pas"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 23,
+                               "name": "3ème couleur forcing",
+                               "desc": "Si l'ouvreur a répété sa couleur d'ouverture à sa deuxième enchère et si le répondant annonce une nouvelle couleur (une 3ème couleur),cette enchère n'indiquera rien dans cette couleur mais rend la séquence forcing.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 24,
+                               "name": "4ème couleur forcing",
+                               "desc": "Si les trois premières enchères ont été faites dans 3 couleurs différentes, l'annonce de la quatrième couleur sera artificielle. \nCela rend la séquence forcing et demande simplement à l'ouvreur de se décrire",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 25,
+                               "name": "Blackwood",
+                               "desc": "L'enchère de 4#N est utilisée pour demander au partenaire son nombre d'As ou de clefs. Lorsqu'on joue les clefs, on considère le roi d'atout comme un A.\nIl y a donc 5 clefs : les 4 As et le Roi d'atout.",
+                               "values": [
+                                          {
+                                          "name": "30/41 classique",
+                                          "desc": "Les réponses sont : 5#C = 0 ou 3 As, 5#D = 1 ou 4 As, 5#H = 2 As sans Roi d'atout, 5#S = 2 As + Roi d'atout"
+                                          },
+                                          {
+                                          "name": "30/41 avec 5 clefs",
+                                          "desc": "Les réponses sont : 5#C = 0 ou 3 clefs, 5#D = 1 ou 4 clefs, 5#H = 2 clefs sans Dame d'atout, 5#S = 2 clefs + Dame d'atout"
+                                          },
+                                          {
+                                          "name": "41/30 classique",
+                                          "desc": "Les réponses sont : 5#C = 1 ou 4 As, 5#D = 0 ou 3 As, 5#H = 2 As sans Roi d'atout, 5#S = 2 As + Roi d'atout"
+                                          },
+                                          {
+                                          "name": "41/30 avec 5 clefs",
+                                          "desc": "Les réponses sont : 5#C = 1 ou 4 clefs, 5#D = 0 ou 3 clefs, 5#H = 2 clefs sans Dame d'atout, 5#S = 2 clefs + Dame d'atout"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 26,
+                               "name": "Drury",
+                               "desc": "Sur une ouverture majeure en 3ème ou 4ème position, l'enchère de 2#C indique une main maximum du passe avec un fit et demande à l'ouvreur la qualité de son ouverture .",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 27,
+                               "name": "Rectification fittée",
+                               "desc": "Jouer les rectifications fittées sur les texas majeurs après une ouverture de 2#N ou un rebid à 2#N",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 28,
+                               "name": "Checkback Stayman",
+                               "desc": "Convention consistant à nommer 3#C après une deuxième enchère de l'ouvreur à 2#N pour savoir s'il a 3 cartes dans la majeure de réponse",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 29,
+                               "name": "Splinter",
+                               "desc": "Une annonce à saut (ou double saut) montre une courte(chicane ou singleton) dans la couleur du saut et un fit dans la dernière couleur annoncée par le partenaire.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 30,
+                               "name": "2#D texas coeur après 1#S 1#N 2#C",
+                               "desc": "Après la séquence 1#S 1#N 2#C,<br> \n2#D montre 5 cartes à #H et 2 cartes à #S ou 5 cartes à #H et 4 cartes à #C<br>\n2#H montre 5 cartes à #H misfitté ou 6 cartes à #H",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Signification des réponses après une intervention",
+               "conventions": [
+                               {
+                               "id": 31,
+                               "name": "Collante",
+                               "desc": "Après une intervention adverse au palier de un (à 1#D ou à 1#H), annoncer la couleur supérieure montre 5 cartes et contrer indique 4 cartes dans la couleur supérieure.",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 32,
+                               "name": "Truscott",
+                               "desc": "Après une intervention par contre, le fit au palier de 3 devient très faible et l'enchère propositionnelle devient 2#N",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 33,
+                               "name": "Défense après les interventions au palier de 2 sur 1#N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Tout naturel",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Rubensohl",
+                                          "desc": "Toutes les enchères deviennent des Texas à partir de 2S#N"
+                                          },
+                                          {
+                                          "name": "Lebensohl",
+                                          "desc": "2#N montre une main compétitive dans une couleur indéterminée, les autres enchères au palier de 3 sont naturelles et forcing"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 34,
+                               "name": "Landik",
+                               "desc": "Après une ouverture mineure et une intervention à 1#N, 2#C montre un bicolore majeur au moins 5/4",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 35,
+                               "name": "Jouer les Texas (par le partenaire de l'ouvreur) après une intervention à 1#N",
+                               "desc": "Après une ouverture mineure ou majeure et une intervention à 1#N, le partenaire de l'ouvreur annonce en texas",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 36,
+                               "name": "Rodrigue",
+                               "desc": "Après une intervention à 1#S, annoncer la mineure de l'ouvreur au palier de 2 montre 5 cartes à #H dans une jeu de 5-9 points",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 37,
+                               "name": "Défense contre 2#N bicolore mineur",
+                               "desc": "Après une ouverture majeure et une intervention à 2#N, le répondant annonce 3#C pour montrer une bonne main avec des #H, 3#D pour montrer une bonne main avec des #S, 3#H et 3#S annoncés directement sont des enchères compétitives",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Signification des interventions et des réponses à une intervention",
+               "conventions": [
+                               {
+                               "id": 38,
+                               "name": "Les bicolores",
+                               "desc": "Les bicolores en intervention",
+                               "values": [
+                                          {
+                                          "name": "Aucun bicolore",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Michaël's cue-bid précisés",
+                                          "desc": "2#N montre toujours pour les deux couleurs les moins chères Sur une ouverture mineure 2#D montre les deux majeures et sur une ouverture majeure le Cuebid montre l'autre majeure et les #C pour montrer l'autre majeure et les #D on fait un saut à 3#C"
+                                          },
+                                          {
+                                          "name": "Michaël's cue-bid non précisés",
+                                          "desc": "2#N montre toujours pour les deux couleurs les moins chères Sur une ouverture mineure 2#D montre les deux majeures et sur une ouverture majeure le Cuebid montre l'autre majeure et une mineure non précisée"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 39,
+                               "name": "Jouer des bicolores au palier de 4 en défense contre une ouverture de 2 faible",
+                               "desc": "4#C montre l'autre majeure et les #D, 4#D montre l'autre majeure et les #C",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 40,
+                               "name": "Intervention par X sur 1#N",
+                               "desc": "Signification de l'intervention par X sur 1#N",
+                               "values": [
+                                          {
+                                          "name": "Punitif",
+                                          "desc": "On pense faire chuter les adversaires"
+                                          },
+                                          {
+                                          "name": "Appel aux majeures",
+                                          "desc": "Une main qui aurait contré d'appel sur une ouverture d'1#C ou d'1#D"
+                                          },
+                                          {
+                                          "name": "Mineur/Majeur",
+                                          "desc": "L'ouverture avec une mineure 5ème et une majeure quatrième"
+                                          },
+                                          {
+                                          "name": "Landy",
+                                          "desc": "Un bicolore au moins 5/4 majeur"
+                                          },
+                                          {
+                                          "name": "5#C et 4#H/#S",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 41,
+                               "name": "Intervention par 2#C sur 1#N",
+                               "desc": "Signification de l'intervention par 2#C sur 1#N",
+                               "values": [
+                                          {
+                                          "name": "Naturel",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Landy",
+                                          "desc": "Un bicolore au moins 5/4 majeur"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 42,
+                               "name": "Intervention par 2#D sur 1#N",
+                               "desc": "Signification de l'intervention par 2#D sur 1#N",
+                               "values": [
+                                          {
+                                          "name": "Naturel",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Multicolore",
+                                          "desc": "2#D montre une majeure sixième indéterminée par inférence 2#H et 2#S d'intervention montre alors 5 cartes avec une mineure 4ème annexe attention cette convention ne se joue plus en position de réveil"
+                                          },
+                                          {
+                                          "name": "5#D et 4#H/#S",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 43,
+                               "name": "1#N en sandwich",
+                               "desc": "Jouer l'enchère de 1#N après un passe d'entrée pour montrer un bicolore 6/4 inverse. 6 cartes dans la couleur la moins chère et 4 cartes dans la couleur la plus chère",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 44,
+                               "name": "Jouer des enchères de barrage en intervention",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 45,
+                               "name": "Jouer la convention du 2#N Lebensohl après le contre d'une ouverture de 2 faible",
+                               "desc": "2#N montre alors une main de 8-10 points et annoncer une couleur directement montre une main de moins de 8 points",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 46,
+                               "name": "Jouer la convention des sauts fittés en réponse à une intervention",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Convention de jeu de la carte",
+               "conventions": [
+                               {
+                               "id": 47,
+                               "name": "Entames à #N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Aucune signification",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "4ème meilleure",
+                                          "desc": "On entame la quatrième de la longue"
+                                          },
+                                          {
+                                          "name": "Pair/Impair",
+                                          "desc": "On essaie d'indiquer si on a un nombre de cartes pair ou impair dans la couleur on entamera donc une petite carte avec un nombre impair et une grosse carte puis une plus petite avec un nombre pair"
+                                          },
+                                          {
+                                          "name": "Petit prometteur",
+                                          "desc": "On entamera une petite carte avec un honneur et une grosse carte sans honneur"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 48,
+                               "name": "Entames à la couleur",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Aucune signification",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "4ème meilleure",
+                                          "desc": "On entame la quatrième de la longue"
+                                          },
+                                          {
+                                          "name": "Pair/Impair",
+                                          "desc": "On essaie d'indiquer si on a un nombre de cartes pair ou impair dans la couleur on entamera donc une petite carte avec un nombre impair et une grosse carte puis une plus petite avec un nombre pair"
+                                          },
+                                          {
+                                          "name": "Petit prometteur",
+                                          "desc": "On entamera une petite carte avec un honneur et une grosse carte sans honneur"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 49,
+                               "name": "Défausses à #N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Aucune signification",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Italienne",
+                                          "desc": "On défaussera une carte impair dans une couleur qui nous intéresse ou une carte pair dans une couleur inintéressante"
+                                          },
+                                          {
+                                          "name": "Pair/Impair",
+                                          "desc": "On défaussera en essayant d'indiquer si on a un nombre de cartes pair ou impair dans la couleur donc d'abord une petite carte avec un nombre impair et une grosse carte puis une plus petite avec un nombre pair"
+                                          },
+                                          {
+                                          "name": "Direct",
+                                          "desc": "On défaussera une grosse dans une couleur qui nous intéresse ou une petite carte dans une couleur inintéressante"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 50,
+                               "name": "Défausses à la couleur",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Aucune signification",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Italienne",
+                                          "desc": "On défaussera une carte impair dans une couleur qui nous intéresse ou une carte pair dans une couleur inintéressante"
+                                          },
+                                          {
+                                          "name": "Pair/Impair",
+                                          "desc": "On défaussera en essayant d'indiquer si on a un nombre de cartes pair ou impair dans la couleur donc d'abord une petite carte avec un nombre impair et une grosse carte puis une plus petite avec un nombre pair"
+                                          },
+                                          {
+                                          "name": "Direct",
+                                          "desc": "On défaussera une grosse dans une couleur qui nous intéresse ou une petite carte dans une couleur inintéressante"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 51,
+                               "name": "Flanc",
+                               "desc": "Signification des cartes fournies en flanc",
+                               "values": [
+                                          {
+                                          "name": "Aucune signification",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Pair/Impair",
+                                          "desc": "On jouera en essayant d'indiquer si on a un nombre de cartes pair ou impair dans la couleur donc on fournira d'abord une petite carte avec un nombre impair et une grosse carte puis une plus petite avec un nombre pair"
+                                          },
+                                          {
+                                          "name": "Pair/Impair inversé",
+                                          "desc": "On jouera en essayant d'indiquer si on a un nombre de cartes pair ou impair dans la couleur donc on fournira d'abord une petite carte avec un nombre pair et une grosse carte puis une plus petite avec un nombre impair"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 52,
+                               "name": "Préférentielles",
+                               "desc": "Jouer des cartes préférentielles : lorsqu'on fait couper le partenaire ou lorsqu'il y a un singleton au mort, une petite carte demande de rejouer la couleur la moins chère, une grosse carte la couleur la plus chère",
+                               "values": [
+                                          {
+                                          "name": "Non",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Oui",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               }
+               ]
+}

@@ -1,0 +1,20 @@
+[Dealer "E"]
+[Vulnerable "NS"]
+[SouthType "human"]
+[WestType "program"]
+[NorthType "program"]
+[EastType "program"]
+[Deal "E:A7.AT9.T853.KQ83 KQJ5.KQJ2.A7.742 64.8653.J942.JT9 T9832.74.KQ6.A65"]
+[Contract "4S"]
+[Declarer "N"]
+[Result "10"]
+[Chapter "SB1-9-1"]
+[Auction "E"]
+1D X Pass 3S
+Pass 4S Pass Pass
+Pass
+[Play "E"]
+CK - - -
+*
+
+

@@ -1,0 +1,1156 @@
+﻿{
+    "profiles": [
+                 {
+                 "id": 1,
+                 "name": "American Standard SAYC - Beginner",
+                 "small_name": "SAYC_1",
+                 "value": "00001100002001013001110000000000000000000000000000000"
+                 },
+                 {
+                 "id": 2,
+                 "name": "American Standard SAYC - Intermediate",
+                 "small_name": "SAYC_2",
+                 "value": "01001100002001013001111111101101110000102100101120000"
+                 },
+                 {
+                 "id": 3,
+                 "name": "American Standard SAYC - Competition",
+                 "small_name": "SAYC_3",
+                 "value": "02011100002001113101111111111111111001112111111120010"
+                 },
+                 {
+                 "id": 4,
+                 "name": "French System Major Fifth - Beginner",
+                 "small_name": "MAJ5_1",
+                 "value": "00000000000000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 5,
+                 "name": "French System Major Fifth - Intermediate",
+                 "small_name": "MAJ5_2",
+                 "value": "01000000001000001001011111101101110000102100101120000"
+                 },
+                 {
+                 "id": 6,
+                 "name": "French System Major Fifth - Competition",
+                 "small_name": "MAJ5_3",
+                 "value": "02010000001000101111011111111111111001112111111120010"
+                 },
+                 {
+                 "id": 7,
+                 "name": "English System ACOL - Beginner",
+                 "small_name": "ACOL_1",
+                 "value": "20102222100000000002110000000001000000000000000000000"
+                 },
+                 {
+                 "id": 8,
+                 "name": "English System ACOL - Intermediate",
+                 "small_name": "ACOL_2",
+                 "value": "21102222101000001002111111101101110000102100101120000"
+                 },
+                 {
+                 "id": 9,
+                 "name": "English System ACOL - Competition",
+                 "small_name": "ACOL_3",
+                 "value": "22112222101000001112111111111111111001112111111120010"
+                 },
+                 {
+                 "id": 10,
+                 "name": "Polish System - Beginner",
+                 "small_name": "POLISH_1",
+                 "value": "30003333200000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 11,
+                 "name": "Polish System - Intermediate",
+                 "small_name": "POLISH_2",
+                 "value": "31003333201000001001011111101001110000102100101120000"
+                 },
+                 {
+                 "id": 12,
+                 "name": "Polish System - Competition",
+                 "small_name": "POLISH_3",
+                 "value": "32013333201000101111011111111111111001112111111120010"
+                 },
+                 {
+                 "id": 13,
+                 "name": "French System Major Fifth - Strong two",
+                 "small_name": "MAJ5_OLD",
+                 "value": "00001222100000000001010000000000000000000000000000000"
+                 },
+                 {
+                 "id": 14,
+                 "name": "Free Profile",
+                 "small_name": "Libre",
+                 "value": null
+                 }
+                 ],
+    "groups": [
+               {
+               "title": "Meaning of opening bids",
+               "conventions": [
+                               {
+                               "id": 0,
+                               "name": "Opening system chosen for the following 1-level opening bids",
+                               "desc": "It is the 4 following opening bids: 1#C/1#D/1#H/1#S",
+                               "values": [
+                                          {
+                                          "name": "Best minor",
+                                          "desc": "For a minor opening bid, you will open with your longest minor. With equal-length minors, you will always open with  1#D, except with a 3/3 minor suit which you will open with  1#C. \nFor a major opening bid, you will need at least a 5-card suit."
+                                          },
+                                          {
+                                          "name": "4-card #D ",
+                                          "desc": "For a minor opening bid, you will open with your longest minor(except with 3#D and 2#C, which you will open with 1#C), with equal length suits, you will always open with 1#D except with a 3/3 minor suit, which you will open with 1#C. \nFor a major opening bid, you will need at least a 5-card suit."
+                                          },
+                                          {
+                                          "name": "ACOL",
+                                          "desc": "You open your longest suit in minor and in major"
+                                          },
+                                          {
+                                          "name": "Polish #C ",
+                                          "desc": "The 1#C opening bid is artificial: with either a strong 18+ hand, or with a 12-14 HCP balanced hand. \nAll the other one-level opening bids show at least a 5-card suit."
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 1,
+                               "name": "Minimum number of points for a 1-level opening bid",
+                               "desc": "With less than 12 HCP, North will open with at least 14HD",
+                               "values": [
+                                          {
+                                          "name": "12 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "11 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "10 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "9 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "13 HCP",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 2,
+                               "name": "Range of a 1#N opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "15-17 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "12-14 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "16-18 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "14-16 HCP",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 3,
+                               "name": "Possibility for a 1#N opening with a 5-card major ",
+                               "desc": "Of course: with also a balanced hand and the required point range.",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 4,
+                               "name": "Meaning of a 2#C opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Semi forcing",
+                                          "desc": "18-23 HCP with a good long suit or balanced 22-23HCP  "
+                                          },
+                                          {
+                                          "name": "Acol",
+                                          "desc": "Game forcing: with 24+ or a strong enough hand to bid to game level on your own power"
+                                          },
+                                          {
+                                          "name": "Strong two",
+                                          "desc": "18-23 HCP and 6 good cards in #C"
+                                          },
+                                          {
+                                          "name": "Polish strong two",
+                                          "desc": "11-15 HCP with 5#C and a 4-card major or with at least 6#C"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 5,
+                               "name": "Meaning of a 2#D opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Acol",
+                                          "desc": "24+ or a strong enough hand to bid to game level on your own power (minimum 16 HCP)"
+                                          },
+                                          {
+                                          "name": "Natural weak two",
+                                          "desc": "5-10 HCP with 6 good cards in #D"
+                                          },
+                                          {
+                                          "name": "Natural strong two",
+                                          "desc": "18-23 HCP with 6 good cards in #D"
+                                          },
+                                          {
+                                          "name": "Multi 2D",
+                                          "desc": "5-10 HCP with 6 cards in #H or 6 cards in #S"
+                                          },
+                                          {
+                                          "name": "Wilkosz",
+                                          "desc": "5-10 HCP in a 2 suiter hand with at least one major suit"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 6,
+                               "name": "Meaning of the 2#H opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Natural weak",
+                                          "desc": "5-10 HCP with 6 good cards in #H \n"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/5",
+                                          "desc": "5-10 HCP in a two-suiter hand with 5#H and a 5-card major"
+                                          },
+                                          {
+                                          "name": "Natural strong",
+                                          "desc": "18-23 HCP with 6 good cards in #H"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/4",
+                                          "desc": "5-10 HCP in a two-suiter hand with 5#H and an at least 4-card minor"
+                                          },
+                                          {
+                                          "name": "Two-suiter with #H and another suit",
+                                          "desc": "5-10 HCP in a two-suiter hand with 5#H and another unknown at least 4-card suit"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 7,
+                               "name": "Meaning of the 2#S opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Natural weak",
+                                          "desc": "5-10 HCP with 6 good cards in #S"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/5",
+                                          "desc": "5-10 HCP in two-suiter hand with 5#S and a 5-card minor suit"
+                                          },
+                                          {
+                                          "name": "Natural strong",
+                                          "desc": "18-23 HCP and 6 good cards in #S"
+                                          },
+                                          {
+                                          "name": "Muiderberg 5/4",
+                                          "desc": "5-10 HCP and a two-suiter hand with 5#S and an at least 4-card minor "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 8,
+                               "name": "Meaning of the 2#N opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "20-21 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "20-22 HCP",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Minor two-suiter",
+                                          "desc": "5-10 HCP and a two-suiter hand with at least 5#C and 5#D"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 9,
+                               "name": "Suit quality required for a preempt bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Classical",
+                                          "desc": "5-10 HCP and a good suit: 2 high honours or 3 honours"
+                                          },
+                                          {
+                                          "name": "Agressive",
+                                          "desc": "4-9 HCP and at least one high honour or 2 honours "
+                                          },
+                                          {
+                                          "name": "Terrorist",
+                                          "desc": "2-8 HCP and no suit quality criterion\n\n"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 10,
+                               "name": "Meaning of the 3#N opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Not used",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Gambling",
+                                          "desc": "An at least 7-card solid minor without any external Ace or King \n "
+                                          },
+                                          {
+                                          "name": "25-27 HCP",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 11,
+                               "name": "Namyats ",
+                               "desc": "The 4#C opening bid shows a 4#H opening bid with at most one looser in trumps and the 4#D shows a 4#S opening bid with at most one looser in trumps. \nThe direct 4#H and 4#S opening bids show hands with a less good suit ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Meaning of responses to an opening bid",
+               "conventions": [
+                               {
+                               "id": 12,
+                               "name": "2#H over 1#C/#D",
+                               "desc": "On a minor suit opening bid, jumping to 2#H shows at least  5#S and 4#H in a 5-9 HCP hand",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 13,
+                               "name": "Forcing 1#N response",
+                               "desc": "The forcing 1#N response convention on a major opening bid forces Opener to rebid on the response.   \nHe cannot pass 1#N and with a balanced 5332 hand, he will bid his best minor. ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 14,
+                               "name": "1#N with fit and a weak hand",
+                               "desc": "On a major opening bid, the 1#N response can show a fit with a hand too weak for a direct raise at 2-level (3-5 HCP)\n\n",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 15,
+                               "name": "Game forcing 2/1 ",
+                               "desc": "On a major opening bid, suit changes at 2-level without jump are game forcing. 2/1 suit changes show 12+ HCP otherwise you bid 1#N.",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 16,
+                               "name": "2#N over 1#H/#S",
+                               "desc": "Meaning of the 2#N bid in response to a major opening bid. ",
+                               "values": [
+                                          {
+                                          "name": "11 HCP and no fit",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "10-11 HCP with a 3-card fit",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "11-14 HCP with a 3-card fit",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Jacoby",
+                                          "desc": "An at least 3-card fit in a game forcing hand. Partner will bid his shortness. By inference, a direct jump raise on a major opening bid  shows 3 or 4 trumps "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 17,
+                               "name": "Jump suit responses",
+                               "desc": "Meaning of jump shift suit responses to a major opening bid.  ",
+                               "values": [
+                                          {
+                                          "name": "Strong",
+                                          "desc": "16 HCP and a good 6-card suit"
+                                          },
+                                          {
+                                          "name": "Invitational",
+                                          "desc": "Encouraging without fit, with 9-11 HCP and a 6-card suit "
+                                          },
+                                          {
+                                          "name": "Natural with fit",
+                                          "desc": "5 cards in the bid suit with a 4-card fit and an invitational hand "
+                                          },
+                                          {
+                                          "name": "Bergen",
+                                          "desc": "The 3#C jump shows 10-11 HCP and 4 trumps, the 3#D jump shows 7-9 HCP and 4 trumps, a jump fit at 3-level shows 4-6 HCP and 4 trumps"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 18,
+                               "name": "3#N on 1#H/#S",
+                               "desc": "After a major opening bid, meaning of the 3#N response",
+                               "values": [
+                                          {
+                                          "name": "12-15 HCP with no fit",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "11-14 HCP with fit and 4 trumps",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "11-14 HCP with fit and 3 or 4 trumps",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 19,
+                               "name": "Responses to a 1#N opening bid",
+                               "desc": "Meaning of the responses to a 1#N opening bid",
+                               "values": [
+                                          {
+                                          "name": "Stayman without transfers",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman with transfers",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman 3 responses with transfers",
+                                          "desc": "With 4#H and 4#S, you will respond 2#H on the Stayman"
+                                          },
+                                          {
+                                          "name": " Stayman with major transfers only",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 20,
+                               "name": "Responses on a game forcing 2#C or 2#D ",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Ace responses",
+                                          "desc": "You will respond the Ace suit.\nWith just one ambiguity: after 2#D, the 2#S bid shows a major Ace."
+                                          },
+                                          {
+                                          "name": "Natural",
+                                          "desc": "You bid the next suit with 0-7 HCP.\nAll other bids are natural with 8+ HCP"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 21,
+                               "name": "Responses to a 2#N opening bid",
+                               "desc": "Meaning of the responses to a 2#N opening bid.",
+                               "values": [
+                                          {
+                                          "name": "Stayman without minor transfers",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Stayman with major and minor transfers ",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Puppet Stayman with major and minor transfers",
+                                          "desc": "Puppet Stayman (3#C) allows you to look for both a 4-card or 5-card major in the 2#N Opener's hand\n\n"
+                                          }
+                                          ],
+                               "type": null
+                               }
+                               ]
+               },
+               {
+               "title": "Conventions in case of an uncontested auction",
+               "conventions": [
+                               {
+                               "id": 22,
+                               "name": "Roudi",
+                               "desc": "Choice of developments after a 1#N rebid by Opener",
+                               "values": [
+                                          {
+                                          "name": "Natural no relay",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "4 answers Roudi ",
+                                          "desc": "2#C asks Opener for his strength and whether he has 3 cards in the responded suit "
+                                          },
+                                          {
+                                          "name": "Ping-pong",
+                                          "desc": "On 2#C Opener has to bid 2#D"
+                                          },
+                                          {
+                                          "name": "3 answers ",
+                                          "desc": "2#C asks Opener for his strength and whether he owns 3 cards in the responded suit but the 2#N rebid doesn't exist"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 23,
+                               "name": "3rd suit forcing",
+                               "desc": "If Opener has repeated his opened suit as second bid and if Responder bids a new suit (a 3rd suit), this bid doesn't show anything special in the suit itself but makes the auction forcing.",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 24,
+                               "name": "4th suit forcing",
+                               "desc": "If the first 3 bids were in 3 different suits, bidding the 4th suit is artificial.  \nIt makes the auction forcing and simply asks Opener to further describe his hand ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 25,
+                               "name": "Blackwood",
+                               "desc": "The 4#N bid is used to ask the partner for his number of Aces or key-cards. When you play key-card Blackwood, trump King is considered as an Ace. \nThere are therefore 5 key-cards: the 4 Aces and trump King.",
+                               "values": [
+                                          {
+                                          "name": "Classical 30/41",
+                                          "desc": "Responses are: 5#C = 0 or 3 Aces, 5#D = 1 or 4 Aces, 5#H = 2 Aces without trump King, 5#S = 2 Aces + trump King"
+                                          },
+                                          {
+                                          "name": "Key-cards 30/41",
+                                          "desc": "Responses are: 5#C = 0 or 3 key-cards, 5#D = 1 or 4 key-cards, 5#H = 2 key-cards without trump Queen, 5#S = 2 key-cards + trump Queen"
+                                          },
+                                          {
+                                          "name": "Classical 41/30",
+                                          "desc": "Responses are: 5#C = 1 or 4 Aces, 5#D = 0 or 3 Aces, 5#H = 2 Aces without trump King, 5#S = 2 Aces + trump King"
+                                          },
+                                          {
+                                          "name": "Key-cards 41/30 ",
+                                          "desc": "Responses are: 5#C = 0 or 4 key-cards, 5#D = 1 or 3 key-cards, 5#H = 2 key-cards without trump Queen, 5#S = 2 key-cards + trump Queen"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 26,
+                               "name": "Drury",
+                               "desc": "On a major opening bid in 3rd or 4th seat, the 2#C response shows a maximum pass hand with a fit and asks Opener for the quality of his opening bid.",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 27,
+                               "name": "Accept transfer with fit only",
+                               "desc": "Accepting transfer with fit only on major transfers after a 2#N opening bid or 2#N rebid",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 28,
+                               "name": "Checkback Stayman",
+                               "desc": "A convention that consists in bidding 3#C after Opener has rebid 2#N as second bid to know whether he holds 3 cards in the responded major ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 29,
+                               "name": "Splinter",
+                               "desc": "A jump shift bid (or double jump) showing a shortness (void or singleton) in the bid suit and a fit in the last suit bid by partner. ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 30,
+                               "name": "2#D transfer for heart after the 1#S 1#N 2#C auction",
+                               "desc": "After the 1#S 1#N 2#C auction,<br> \n2#D shows 5 cards in #H and 2 cards in #S or 5 cards in #H and 4 cards in #C<br>\n2#H shows 5 cards in #H with a misfit or 6 cards in #H",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Meaning of the responses after an overcall",
+               "conventions": [
+                               {
+                               "id": 31,
+                               "name": "\"Collante\" convention",
+                               "desc": "After a 1-level opponent's overcall (with 1#D or 1#H), a direct bid of the next suit shows 5 cards and a double shows 4 cards in the next suit. ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 32,
+                               "name": "Truscott",
+                               "desc": "After a double overcall, a fit at 3-level becomes very weak and 2#N becomes the invitational bid ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 33,
+                               "name": "Defense after a 2-level overcall on a 1#N opening bid",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "Natural",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Rubensohl",
+                                          "desc": "All bids from 2#N on are transfers"
+                                          },
+                                          {
+                                          "name": "Lebensohl",
+                                          "desc": "2#N shows a competitive hand with an unknown suit, all other bids at 3-level are natural and forcing"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 34,
+                               "name": "Landik",
+                               "desc": "After a minor suit opening bid followed by a 1#N overcall, 2#C show an at least 5/4 major two-suiter",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 35,
+                               "name": "Playing transfers (Opener's partner) after a 1#N overcall",
+                               "desc": "After a minor or major opening bid followed by a 1#N overcall, all Opener partner's bids are transfers ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 36,
+                               "name": "Rodrigue",
+                               "desc": "After a 1#S overcall, bidding Opener's minor at 2-level shows 5 cards in #H with 5-9 HCP",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 37,
+                               "name": "Defense against 2#N showing a minor two-suiter",
+                               "desc": "After a major opening bid and a 2#N overcall, Responder bids 3#C to show a good hand with #H, 3#D to show a good hand with #S, the 3#H and 3#S direct bids are competitive",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Meaning of overcalls and of responses to overcalls ",
+               "conventions": [
+                               {
+                               "id": 38,
+                               "name": "Two-suiter",
+                               "desc": "Overcalls showing a two-suiter",
+                               "values": [
+                                          {
+                                          "name": "No two-suiter bids",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Michaël's cue-bid French standard implementation",
+                                          "desc": "2#N always shows the two lowest ranking suits. On a minor opening bid, 2#D shows 2 major suits and on a major opening bid the Cuebid shows the other major and #C. To show the other major and #D you have to jump to 3#C"
+                                          },
+                                          {
+                                          "name": "Michaël's cue-bid ",
+                                          "desc": "2#N always shows the two lowest ranking suits. On a minor opening bid, 2#D shows 2 major suits and on a major opening bid the Cuebid shows the other major and an unknown minor"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 39,
+                               "name": "Two-suiter at 4-level against weak twos",
+                               "desc": "4#C shows the other major and #D and 4#D shows the other major and #C",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 40,
+                               "name": "The X overcall on 1#N",
+                               "desc": "Meaning of the X overcall on 1#N",
+                               "values": [
+                                          {
+                                          "name": "Penalty",
+                                          "desc": "You think opponents are going to go down"
+                                          },
+                                          {
+                                          "name": "Take-out for majors",
+                                          "desc": "A hand with which you would have bid a take-out double on a 1#C or 1#D opening bid"
+                                          },
+                                          {
+                                          "name": "Minor/Major",
+                                          "desc": "An opening hand value with a 5-card minor and a 4-card major "
+                                          },
+                                          {
+                                          "name": "Landy",
+                                          "desc": "An at least 5/4 major two-suiter"
+                                          },
+                                          {
+                                          "name": "5#C + 4#H/#S",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 41,
+                               "name": "2#C overcall on 1#N ",
+                               "desc": "Meaning of the 2#C overcall on a 1#N opening bid",
+                               "values": [
+                                          {
+                                          "name": "Natural",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Landy",
+                                          "desc": "An at least 5/4 major two-suiter"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 42,
+                               "name": "2#D overcall on 1#N ",
+                               "desc": "Meaning of the 2#D overcall on a 1#N opening bid",
+                               "values": [
+                                          {
+                                          "name": "Natural",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Multi",
+                                          "desc": "2#D shows an unknown 6-card major suit. By inference, the 2#H and 2#S overcalls show 5 cards with another 4-card minor. Please note that this convention is not played in the balancing seat "
+                                          },
+                                          {
+                                          "name": "5#D + 4#H/#S",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 43,
+                               "name": "1#N in balancing position",
+                               "desc": "Use the 1#N bid after Pass to show an reverse 6/4 two-suiter: 6 cards in the lowest ranking suit and 4 cards in the highest ranking suit ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 44,
+                               "name": "Preemptive overcalls",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 45,
+                               "name": "2#N Lebensohl convention after a weak-two opening bid is doubled",
+                               "desc": "2#N then shows a hand with 8-10 HCP while a directly bid suit shows less than 8 HCP ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               },
+                               {
+                               "id": 46,
+                               "name": "Jump shift with fit in response to an overcall",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               },
+               {
+               "title": "Cardplay conventions",
+               "conventions": [
+                               {
+                               "id": 47,
+                               "name": "Leads against #N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No meaning",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "4th best",
+                                          "desc": "You lead the 4th best of your longest suit"
+                                          },
+                                          {
+                                          "name": "3rd/5th",
+                                          "desc": "You try to show if you have an even or odd number of cards in the lead suit. You will therefore lead a low card with an odd number and a high card then a lower one with an even number "
+                                          },
+                                          {
+                                          "name": "Encouraging low card",
+                                          "desc": "You will lead a low card with an honour and a high card without an honour "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 48,
+                               "name": "Leads against suit",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No meaning",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "4th best",
+                                          "desc": "You lead the 4th best of your longest suit "
+                                          },
+                                          {
+                                          "name": "3rd/5th",
+                                          "desc": "You try to show if you have an even or odd number of cards in the lead suit. You will therefore lead a low card with an odd number and a high card then a lower one with an even number"
+                                          },
+                                          {
+                                          "name": "Encouraging low card",
+                                          "desc": "You will lead a low card with an honour and a high card without an honour  "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 49,
+                               "name": "discarding against #N",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No meaning",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Italian",
+                                          "desc": "You will discard an odd card in a suit you are interested in and an even card in a suit you are not interested in "
+                                          },
+                                          {
+                                          "name": "3rd/5th",
+                                          "desc": "You try to discard showing if you have an even or odd number of cards in the lead suit. You will therefore discard a low card with an odd number and a high card then a lower one with an even number"
+                                          },
+                                          {
+                                          "name": "Direct",
+                                          "desc": "You will discard a high card in a suit you are interested in and a low card in a suit you are not interested in "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 50,
+                               "name": "Discarding against suit",
+                               "desc": null,
+                               "values": [
+                                          {
+                                          "name": "No meaning",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Italian",
+                                          "desc": "You will discard an odd card in a suit you are interested in and an even card in a suit you are not interested in  "
+                                          },
+                                          {
+                                          "name": "3rd/5th",
+                                          "desc": "You try to discard showing if you have an even or odd number of cards in the lead suit. You will therefore lead a low card with an odd number and a high card then a lower one with an even number"
+                                          },
+                                          {
+                                          "name": "Direct",
+                                          "desc": "You will discard a high card in a suit you are interested in and a low card in a suit you are not interested in    "
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 51,
+                               "name": "Defense ",
+                               "desc": "Meaning of card played to follow suit in defense",
+                               "values": [
+                                          {
+                                          "name": "No meaning",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "3rd/5th",
+                                          "desc": "You try to show if you have an even or odd number of cards in the lead suit. You will therefore follow suit with a low card with an odd number and a high card then a lower one with an even number   "
+                                          },
+                                          {
+                                          "name": "2nd/4th",
+                                          "desc": "You try to show if you have an even or odd number of cards in the lead suit. You will therefore follow suit with a low card with an even number and a high card then a lower one with an odd number"
+                                          }
+                                          ],
+                               "type": null
+                               },
+                               {
+                               "id": 52,
+                               "name": "Suit preference",
+                               "desc": "You try to show suit preference: when you play for your partner to ruff or when Dummy holds a singleton, a low card asks for a lead in the lowest ranking suit and a high card for a lead in the highest ranking suit ",
+                               "values": [
+                                          {
+                                          "name": "No",
+                                          "desc": null
+                                          },
+                                          {
+                                          "name": "Yes",
+                                          "desc": null
+                                          }
+                                          ],
+                               "type": "bool"
+                               }
+                               ]
+               }
+               ]
+}

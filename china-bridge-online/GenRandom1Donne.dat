@@ -1,0 +1,186 @@
+[LIST]
+1=1_random
+
+[1_random]
+1=dujeuen
+2=indifferent1
+3=indifferent2
+4=indifferent3
+5=indifferent4
+6=indifferent5
+7=indifferent6
+8=indifferent7
+9=indifferent8
+10=indifferent9
+11=pasdejeu1
+12=pasdejeu2
+13=pasdejeu3
+
+[dujeuen]
+phmin=15 00 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent1]
+phmin=10 12 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent2]
+phmin=10 00 12 00 00 00
+phmax=40 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent3]
+phmin=10 00 00 12 00 00
+phmax=40 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent4]
+phmin=10 12 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent5]
+phmin=10 00 12 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent6]
+phmin=10 00 00 12 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent7]
+phmin=10 12 00 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent8]
+phmin=10 00 12 00 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[indifferent9]
+phmin=10 00 00 12 00 00
+phmax=40 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[pasdejeu1]
+phmin=04 12 00 00 00 00
+phmax=14 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[pasdejeu2]
+phmin=04 00 12 00 00 00
+phmax=14 40 40 40 40 40
+trmin=01 01 01 01 00 00
+trmax=13 13 13 13 13 13
+camin=01 01 01 01 00 00
+camax=13 13 13 13 13 13
+comin=01 01 01 01 00 00
+comax=13 13 13 13 13 13
+pimin=01 01 01 01 00 00
+pimax=13 13 13 13 13 13
+dealer=
+
+[pasdejeu3]
+phmin=04 00 00 12 00 00
+phmax=14 40 40 40 40 40
+trmin=00 00 00 00 00 00
+trmax=13 13 13 13 13 13
+camin=00 00 00 00 00 00
+camax=13 13 13 13 13 13
+comin=00 00 00 00 00 00
+comax=13 13 13 13 13 13
+pimin=00 00 00 00 00 00
+pimax=13 13 13 13 13 13
+dealer=
