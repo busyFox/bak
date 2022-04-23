@@ -510,7 +510,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
-		<spring.version>5.0.2.RELEASE</spring.version>
+		<spring.version>5.3.19</spring.version>
 		<jackson.version>2.9.1</jackson.version>
 		<jersey.version>2.26</jersey.version>
 		<maven.build.timestamp.format>yyyy/MM/dd - HH:mm:ss</maven.build.timestamp.format>
